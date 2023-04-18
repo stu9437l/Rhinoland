@@ -1,0 +1,26 @@
+// utilities scss files
+@import "./abstract/variable";
+
+// base scss files
+@import "./base/reset";
+@import "./base/typography";
+
+// components scss files
+@import "./components/buttons/solid";
+@import "./components/input";
+@import "./components/buttons/outline";
+@import "./components/title";
+@import "./components/cards/collection-product";
+@import "./components/cards/product";
+@import "./components/cards/blog";
+@import "./components/cards/service-item";
+@import "./components/modal/main-search";
+
+// layout scss files
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/testimonial";
+@import "./layout/partner";
+
+// pages scss files
+@import "./pages/home";

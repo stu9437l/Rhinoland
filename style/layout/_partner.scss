@@ -1,0 +1,21 @@
+section {
+  &.partner-section {
+    .partner-company {
+      &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      &__item {
+        margin: 0 30px;
+        img {
+          width: 125px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

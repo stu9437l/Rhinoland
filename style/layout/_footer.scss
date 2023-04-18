@@ -1,0 +1,82 @@
+footer {
+  background-color: $blue-color;
+  .top-footer {
+    padding: 30px 0;
+    .owner {
+      &-profile {
+        // background-color: white;
+        padding: 15px;
+        border-radius: $border-radius;
+        &__image {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-bottom: 20px;
+        }
+        &__name {
+          font-size: 20px;
+          color: $white-color;
+          margin-bottom: 5px;
+        }
+        &__position {
+          font-size: 18px;
+          margin-bottom: 20;
+          color: $light-white-color;
+        }
+      }
+    }
+    .footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      &__title {
+        font-size: 22px;
+        color: $white-color;
+        margin-bottom: 30px;
+      }
+      &__item {
+      }
+      &__link {
+        color: $light-white-color;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 15px;
+        &:hover {
+          color: $white-color;
+          text-decoration: underline;
+        }
+        i {
+          margin-right: 5px;
+        }
+        // &.text--black {
+        //   color: $black-color;
+        // }
+      }
+      &__description {
+        color: white;
+        margin-bottom: 15px;
+      }
+    }
+    .newsletter-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      input {
+        width: 100%;
+        margin-right: 10px;
+      }
+    }
+  }
+  .bottom-footer {
+    border-top: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+    padding: 15px 0;
+    .copyright-text {
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: $light-white-color;
+      margin-bottom: 0;
+    }
+  }
+}

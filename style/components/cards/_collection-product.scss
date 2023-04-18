@@ -1,0 +1,40 @@
+.collection-card {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 60px;
+  cursor: pointer;
+
+  &__image {
+    height: 260px;
+    width: 100%;
+    border-radius: $border-radius;
+  }
+  &__detail {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $transition;
+  }
+  &__title {
+    font-size: 18px;
+    color: $black-color;
+    margin-bottom: 10px;
+  }
+  &__count {
+    font-size: 14px;
+    color: $black-70-color;
+    margin-bottom: 0;
+  }
+  &:hover {
+    .collection-card__title {
+      color: $red-color;
+    }
+  }
+}

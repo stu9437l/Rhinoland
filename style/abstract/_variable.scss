@@ -1,0 +1,25 @@
+// colors
+$red-color: #a00a0b;
+$black-color: black;
+$black-70-color: #777;
+$blue-color: #3d4191;
+$white-color: #ffffff;
+$light-white-color: #f6f6f4;
+
+//fonts family
+$Josefin-font: "Josefin Sans", sans-serif;
+$yeseva-font: "Yeseva One", cursive;
+
+// border radius
+$border-radius: 0px;
+$border-lg-radius: 14px;
+
+// transition time and animation
+$transition: all 0.3s ease-in-out;
+
+// box shadow
+$box-shadow: 0 0 30px 0
+  rgba(
+    $color: #000000,
+    $alpha: 0.1,
+  );

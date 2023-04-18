@@ -1,0 +1,33 @@
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  &__title {
+    font-size: 32px;
+    color: $black-color;
+    margin-bottom: 0;
+  }
+  &__link {
+    font-size: 18px;
+    color: $red-color;
+    margin-bottom: 0;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    i {
+      font-size: 13px;
+      margin-left: 5px;
+    }
+    &:hover {
+      color: $red-color;
+      text-decoration: underline;
+    }
+  }
+  &__sub--title {
+    font-size: 18px;
+    color: $red-color;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+}

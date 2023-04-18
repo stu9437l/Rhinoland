@@ -1,0 +1,42 @@
+section {
+  padding: 48px 0;
+  &.banner-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+}
+
+section {
+  &.best-deal-section {
+    padding: 90px 0;
+    background-color: $light-white-color;
+    position: relative;
+    .best-deal {
+      &__subtitle {
+        font-size: 18px;
+        color: $red-color;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      &__title {
+        font-size: 32px;
+        color: $black-color;
+        margin-bottom: 20px;
+      }
+      &__description {
+        color: $black-color;
+        margin-bottom: 20px;
+      }
+      &__image {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+
