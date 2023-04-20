@@ -1030,6 +1030,7 @@ section.testimonial-section .slick-arrow {
   justify-content: center;
   border-radius: 50%;
   background-color: white;
+  border: 1px solid #777;
   top: 110%;
 }
 section.testimonial-section .slick-arrow::before {
@@ -1047,6 +1048,10 @@ section.testimonial-section .slick-arrow.slick-next {
 }
 section.testimonial-section .slick-arrow:hover::before {
   color: #a00a0b;
+}
+section.testimonial-section .slick-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 section.partner-section .partner-company__list {
@@ -1539,6 +1544,9 @@ section.best-deal-section .best-deal__image {
   margin-bottom: 0;
   margin-top: 20px;
 }
+.faq__content {
+  display: none;
+}
 
 .link-category__list {
   list-style: none;
@@ -1627,6 +1635,7 @@ section.best-deal-section .best-deal__image {
     padding: 0;
   }
   .form-control {
+    min-height: 40px;
     height: 40px;
   }
   .form-control::placeholder {

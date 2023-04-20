@@ -7,14 +7,14 @@ $web: 1280px;
   .button {
     height: 40px;
     padding: 0 20px;
-    font-size: 14px;
+    font-size: $font-sm-size;
     &--red {
       background-color: $red-color;
       border: 1px solid $red-color;
       color: white;
     }
     i {
-      font-size: 14px;
+      font-size: $font-sm-size;
       margin-left: 10px;
     }
     &:hover {
@@ -34,9 +34,10 @@ $web: 1280px;
     }
   }
   .form-control {
+    min-height: 40px;
     height: 40px;
     &::placeholder {
-      font-size: 14px;
+      font-size: $font-sm-size;
     }
   }
 
@@ -47,7 +48,7 @@ $web: 1280px;
     }
     &__link {
       white-space: nowrap;
-      font-size: 14px;
+      font-size: $font-sm-size;
       display: flex;
       align-items: center;
 
@@ -57,7 +58,7 @@ $web: 1280px;
       }
     }
     &__sub--title {
-      font-size: 14px;
+      font-size: $font-sm-size;
     }
   }
   .collection-card {
@@ -71,7 +72,7 @@ $web: 1280px;
       margin-bottom: 5px;
     }
     &__count {
-      font-size: 14px;
+      font-size: $font-sm-size;
       color: $black-70-color;
       margin-bottom: 0;
     }
@@ -94,7 +95,7 @@ $web: 1280px;
     &__price {
       margin-bottom: 0;
       .actual-price {
-        font-size: 14px;
+        font-size: $font-sm-size;
       }
       .marked-price {
         font-size: 13px;
@@ -112,7 +113,7 @@ $web: 1280px;
       padding: 15px;
     }
     &__date {
-      font-size: 14px;
+      font-size: $font-sm-size;
       margin-bottom: 5px;
     }
     &__title {
@@ -120,7 +121,7 @@ $web: 1280px;
       margin-bottom: 5px;
     }
     &__link {
-      font-size: 14px;
+      font-size: $font-sm-size;
       i {
         font-size: 11px;
       }
@@ -146,7 +147,7 @@ $web: 1280px;
         margin-bottom: 5px;
       }
       &__description {
-        font-size: 14px;
+        font-size: $font-sm-size;
       }
     }
   }
@@ -201,7 +202,7 @@ $web: 1280px;
       }
       &__link {
         padding: 5px 10px;
-        font-size: 14px;
+        font-size: $font-sm-size;
         margin-right: 5px;
         i {
           font-size: 13px;
@@ -220,14 +221,14 @@ $web: 1280px;
         width: 100%;
         .top-offer {
           &__text {
-            font-size: 14px;
+            font-size: $font-sm-size;
           }
         }
       }
       .column-end {
         .quick-link {
           &__link {
-            font-size: 14px;
+            font-size: $font-sm-size;
           }
         }
       }
@@ -299,7 +300,7 @@ $web: 1280px;
       //         .dropdown-menu__link {
       //           margin-top: 15px;
       //           color: $red-color;
-      //           font-size: 14px;
+      //           font-size: $font-sm-size;
       //           font-weight: 600;
       //           display: flex;
       //           align-items: center;
@@ -331,7 +332,7 @@ $web: 1280px;
       .column-end {
         .icon-menu {
           &__link {
-           font-size: $font-md-size;
+            font-size: $font-md-size;
             margin-left: 15px;
             .cart-count {
               height: 18px;
@@ -365,7 +366,7 @@ $web: 1280px;
           margin-bottom: 10px;
         }
         &__description {
-          font-size: 14px;
+          font-size: $font-sm-size;
           margin-bottom: 40px;
         }
       }
@@ -379,7 +380,7 @@ $web: 1280px;
           margin-bottom: 5px;
         }
         &__position {
-          font-size: 14px;
+          font-size: $font-sm-size;
         }
       }
       .slick-arrow {
@@ -420,7 +421,7 @@ $web: 1280px;
             margin-bottom: 5px;
           }
           &__position {
-            font-size: 14px;
+            font-size: $font-sm-size;
             margin-bottom: 10px;
             color: $light-white-color;
           }
@@ -432,21 +433,21 @@ $web: 1280px;
         margin: 0;
 
         &__title {
-         font-size: $font-md-size;
+          font-size: $font-md-size;
           color: $white-color;
           margin-bottom: 10px;
         }
 
         &__link {
           margin-bottom: 10px;
-          font-size: 14px;
+          font-size: $font-sm-size;
           i {
             margin-right: 5px;
             font-size: 12px;
           }
         }
         &__description {
-          font-size: 14px;
+          font-size: $font-sm-size;
           margin-bottom: 5px;
         }
       }
@@ -463,7 +464,7 @@ $web: 1280px;
     .bottom-footer {
       padding: 10px 0;
       .copyright-text {
-        font-size: 14px;
+        font-size: $font-sm-size;
       }
     }
   }
@@ -475,7 +476,7 @@ $web: 1280px;
       z-index: 1;
       .best-deal {
         &__subtitle {
-          font-size: 14px;
+          font-size: $font-sm-size;
           margin-bottom: 10px;
         }
         &__title {
@@ -483,7 +484,7 @@ $web: 1280px;
           margin-bottom: 10px;
         }
         &__description {
-          font-size: 14px;
+          font-size: $font-sm-size;
           margin-bottom: 20px;
         }
         &__image {

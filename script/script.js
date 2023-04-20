@@ -65,7 +65,6 @@ $(document).ready(function () {
   });
 
   //product media images
-
   $(".product-slider__list").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -87,5 +86,17 @@ $(document).ready(function () {
   $(".mobile-menu .main-nav__link").click(function () {
     $(this).closest(".main-nav__item").find(".mob-dropdown-menu").slideToggle();
     $(this).find("i").toggleClass("fa-chevron-up");
+  });
+
+  //faqs item toggle
+  const faqButton = $(".faq__item .faq__question");
+  faqButton.each(function () {
+    $(this).click(function () {
+      $(".faq__item .faq__content").slideUp();
+      $(this).closest(".faq__item").find(".faq__content").slideToggle();
+      $(this)
+        .find(".faq__icon")
+        .togglehtml(" <i class='fa-solid fa-minus'></i>");
+    });
   });
 });
