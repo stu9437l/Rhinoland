@@ -653,7 +653,7 @@ label {
 }
 
 header .top-header {
-  padding: 10px 0;
+  padding: 6px 0;
   background-color: #f6f6f4;
   display: flex;
   align-items: center;
@@ -701,9 +701,12 @@ header .top-header .column-end .quick-link__list {
 }
 header .top-header .column-end .quick-link__link {
   font-size: 14px;
-  color: #777;
+  color: #a00a0b;
   text-decoration: none;
   margin-left: 20px;
+}
+header .top-header .column-end .quick-link__link:hover {
+  text-decoration: underline;
 }
 header .bottom-header .column-start .brand-logo {
   display: inline-block;
@@ -782,13 +785,15 @@ header .bottom-header .column-center .main-nav__item .dropdown-menu__link:hover 
 }
 header .bottom-header .column-center .main-nav__link {
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
-  margin: 0 15px;
-  text-transform: uppercase;
+  margin: 0 10px;
   font-weight: 600;
-  padding: 40px 0;
+  padding: 30px 0;
+}
+header .bottom-header .column-center .main-nav__link i {
+  font-size: 13px;
 }
 header .bottom-header .column-center .main-nav__link:hover {
   color: #a00a0b;
@@ -818,8 +823,9 @@ header .bottom-header .column-end .icon-menu__link .cart-count {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #f6f6f4;
-  color: #a00a0b;
+  background-color: #a00a0b;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   font-size: 14px;
   font-weight: 400;
   top: -12px;
