@@ -1,0 +1,93 @@
+.about-company {
+  .company__image {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+  .company-detail {
+    &__title {
+      font-size: $font-xl-size;
+      color: $black-color;
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: $font-md-size;
+      color: $black-color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.company-goal {
+  padding: 64px 0;
+  background-color: $light-white-color;
+  &__icon {
+    height: 64px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: $font-lg-size;
+    color: $black-color;
+    margin-bottom: 15px;
+  }
+  &__description {
+    font-size: $font-md-size;
+    color: $black-color;
+    margin-bottom: 0;
+  }
+}
+.owner-information {
+  padding: 64px 0;
+  background-color: $black-70-color;
+  .owner {
+    &__profile {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+    &__detail {
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      width: 90%;
+      transform: translateX(-50%);
+      background-color: white;
+      text-align: center;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
+      padding: 10px;
+    }
+    &__name {
+      font-size: $font-lg-size;
+      color: $black-color;
+      margin-bottom: 3px;
+    }
+    &__position {
+      font-size: $font-md-size;
+      color: $black-70-color;
+      margin-bottom: 0px;
+    }
+    &__socialmedia {
+      &__list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      &__link {
+        color: $light-white-color;
+        display: inline-block;
+        font-size: 25px;
+        margin: 0 5px;
+        line-height: 0;
+        &:hover {
+          color: $red-color;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
     margin-bottom: 0;
   }
   &__link {
-   font-size: $font-md-size;
+    font-size: $font-md-size;
     color: $red-color;
     margin-bottom: 0;
     font-weight: 600;
@@ -24,8 +24,12 @@
       text-decoration: underline;
     }
   }
+  &__description {
+    font-size: $font-md-size;
+    color: $black-color;
+  }
   &__sub--title {
-   font-size: $font-md-size;
+    font-size: $font-md-size;
     color: $red-color;
     margin-bottom: 0;
     font-weight: 600;
