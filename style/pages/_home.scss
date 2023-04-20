@@ -15,7 +15,7 @@ section {
     position: relative;
     .best-deal {
       &__subtitle {
-        font-size: 18px;
+       font-size: $font-md-size;
         color: $red-color;
         margin-bottom: 20px;
         font-weight: 600;

@@ -10,7 +10,7 @@ html {
 }
 body {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
+ font-size: $font-md-size;
   color: black;
   font-weight: 400;
   line-height: 1.5;
@@ -20,4 +20,9 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+.bg-property {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -9,7 +9,7 @@
     margin-bottom: 0;
   }
   &__link {
-    font-size: 18px;
+   font-size: $font-md-size;
     color: $red-color;
     margin-bottom: 0;
     font-weight: 600;
@@ -25,7 +25,7 @@
     }
   }
   &__sub--title {
-    font-size: 18px;
+   font-size: $font-md-size;
     color: $red-color;
     margin-bottom: 0;
     font-weight: 600;

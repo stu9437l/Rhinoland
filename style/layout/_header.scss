@@ -22,7 +22,7 @@ header {
         &__link {
           display: inline-block;
           color: $black-70-color;
-          font-size: 18px;
+         font-size: $font-md-size;
           margin-right: 20px;
           &:hover {
             color: $black-color;
@@ -97,7 +97,7 @@ header {
             }
           }
           .dropdown-menu__title {
-            font-size: 18px;
+           font-size: $font-md-size;
             color: $black-color;
             margin-bottom: 10px;
           }
@@ -225,6 +225,76 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+.offcanvas {
+  &.mobile-menu {
+    height: 100vh;
+    overflow-y: auto;
+    .brand-logo {
+      img {
+        height: 45px;
+      }
+    }
+    .main-nav {
+      &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      &__link {
+        display: inline-block;
+        font-size: 14px;
+        color: $black-color;
+        text-decoration: none;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 0;
+        &:hover {
+          color: $red-color;
+        }
+      }
+    }
+    .mob-dropdown-menu {
+      display: none;
+      &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      &__link {
+        margin-top: 5px;
+        color: $red-color;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        i {
+          margin-left: 5px;
+          font-size: 13px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &__title {
+        font-size: 14px;
+      }
+    }
+
+    .dropdown-item {
+      display: inline-block;
+      font-size: 16px;
+      width: auto;
+      padding: 0;
+      color: $black-70-color;
+      &:hover {
+        background-color: $light-white-color;
+        color: $red-color;
       }
     }
   }

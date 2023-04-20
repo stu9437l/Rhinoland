@@ -1,0 +1,70 @@
+.square {
+  &--arrows {
+    .slick-arrow {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+      }
+      &.slick-prev {
+        content: "\f054";
+        left: 0%;
+      }
+      &.slick-next {
+        content: "\f053";
+        right: 0%;
+      }
+      &.slick-disabled {
+        opacity: 0.1;
+        cursor: not-allowed;
+      }
+    }
+  }
+  &--red {
+    .slick-arrow {
+      background-color: $red-color;
+      &::before {
+        color: $white-color;
+      }
+      &:hover {
+        &::before {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+.visible {
+  &--dots {
+    .slick-dots {
+      li {
+        width: auto;
+        margin: 0 3px;
+        button {
+          height: 8px;
+          width: 8px;
+          //   border-radius: 50%;
+          background-color: $red-color;
+          border-radius: 4px;
+          margin: 0;
+          padding: 0;
+          opacity: 0.4;
+          &::before {
+            display: none;
+          }
+        }
+        &.slick-active {
+          button {
+            width: 24px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.search-result {
+  &__form {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 20px;
+    color: $black-color;
+    margin-bottom: 0;
+  }
+}

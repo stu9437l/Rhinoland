@@ -1,0 +1,17 @@
+.section-banner {
+  padding: 64px 0;
+  position: relative;
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+  &__description {
+    text-align: center;
+   font-size: $font-md-size;
+    color: $white-color;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+}

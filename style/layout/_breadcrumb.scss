@@ -1,0 +1,33 @@
+.breadcrumb-section {
+  padding: 20px 0;
+  background-color: $light-white-color;
+  .breadcrumb {
+    &__list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    &__item {
+      &:nth-child(n)::after {
+        content: ">";
+        padding: 0 8px;
+        color: $black-70-color;
+      }
+      &:last-child::after {
+        content: "";
+        display: none;
+      }
+    }
+
+    &__link {
+      font-size: $font-md-size;
+      color: $red-color;
+      text-decoration: none;
+      .is-active {
+        color: $black-70-color !important;
+      }
+    }
+  }
+}

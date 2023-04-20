@@ -1,3 +1,9 @@
+$font-xl-size: 32px;
+$font-lg-size: 24px;
+$font-md-size: 18px;
+$font-sm-size: 14px;
+$font-xs-size: 12px;
+
 h1,
 h2,
 h3,
@@ -5,9 +11,30 @@ h4 {
   font-family: $yeseva-font;
 }
 
-.heading__text {
-  font-size: 2.8rem;
-}
-.description__text {
-  font-size: 1.6rem;
+.text {
+  &-xl {
+    font-size: $font-xl-size;
+  }
+  &-lg {
+    font-size: $font-lg-size;
+  }
+  &-md {
+    font-size: $font-md-size;
+  }
+  &-sm {
+    font-size: $font-sm-size;
+  }
+  &-xs {
+    font-size: $font-xs-size;
+  }
+
+  &-red {
+    color: $red-color;
+  }
+  &-white {
+    color: $white-color;
+  }
+  &-black {
+    color: $black-color;
+  }
 }

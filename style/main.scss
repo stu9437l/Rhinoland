@@ -2,8 +2,8 @@
 @import "./abstract/variable";
 
 // base scss files
-@import "./base/reset";
 @import "./base/typography";
+@import "./base/reset";
 
 // components scss files
 @import "./components/buttons/solid";
@@ -15,12 +15,20 @@
 @import "./components/cards/blog";
 @import "./components/cards/service-item";
 @import "./components/modal/main-search";
+@import "./components/slider";
+@import "./components/_search-result-form";
 
 // layout scss files
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/testimonial";
 @import "./layout/partner";
+@import "./layout/section-banner";
+@import "./layout/breadcrumb";
 
 // pages scss files
 @import "./pages/home";
+@import "./pages/product";
+
+//responsive scss files
+@import "./responsive/breakpoint";
