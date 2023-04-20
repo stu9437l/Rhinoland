@@ -654,8 +654,6 @@ label {
 
 header .top-header {
   padding: 10px 0;
-  position: sticky;
-  top: 0;
   background-color: #f6f6f4;
   display: flex;
   align-items: center;
@@ -690,7 +688,7 @@ header .top-header .column-center .top-offer__banner {
   text-align: center;
 }
 header .top-header .column-center .top-offer__text {
-  color: #a00a0b;
+  color: #eb7700;
   margin-bottom: 0;
 }
 header .top-header .column-end .quick-link__list {

@@ -1,8 +1,6 @@
 header {
   .top-header {
     padding: 10px 0;
-    position: sticky;
-    top: 0;
     background-color: $light-white-color;
     display: flex;
     align-items: center;
@@ -22,7 +20,7 @@ header {
         &__link {
           display: inline-block;
           color: $black-70-color;
-         font-size: $font-md-size;
+          font-size: $font-md-size;
           margin-right: 20px;
           &:hover {
             color: $black-color;
@@ -40,7 +38,7 @@ header {
           text-align: center;
         }
         &__text {
-          color: $red-color;
+          color: $yellow-color;
           margin-bottom: 0;
         }
       }
@@ -97,7 +95,7 @@ header {
             }
           }
           .dropdown-menu__title {
-           font-size: $font-md-size;
+            font-size: $font-md-size;
             color: $black-color;
             margin-bottom: 10px;
           }
