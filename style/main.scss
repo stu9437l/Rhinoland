@@ -20,6 +20,8 @@
 @import "./components/_search-result-form";
 @import "./components/main-filter";
 @import "./components/cards/product-list";
+@import "./components/cards/procedure";
+@import "./components/list";
 
 // layout scss files
 @import "./layout/header";
@@ -33,6 +35,8 @@
 @import "./pages/home";
 @import "./pages/product";
 @import "./pages/about";
+@import "./pages/faqs";
+@import "./pages/jobs";
 
 //responsive scss files
 @import "./responsive/breakpoint";

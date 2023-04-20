@@ -196,24 +196,6 @@
     }
   }
 
-  .additional-information {
-    &__list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    &__item {
-      display: flex;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: $light-white-color;
-      margin-bottom: 15px;
-    }
-
-    &__label {
-      width: 200px;
-    }
-  }
   .return-policy {
     &__title {
       font-size: $font-lg-size;

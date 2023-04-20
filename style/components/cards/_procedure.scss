@@ -1,0 +1,33 @@
+.order-procedure {
+  .procedure-card {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+  }
+  .procedure {
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &__count {
+      font-size: $font-xl-size;
+      margin-right: 15px;
+      color: $black-70-color;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: $font-lg-size;
+      margin-bottom: 20px;
+    }
+    &__descritption {
+      font-size: $font-md-size;
+      color: $black-color;
+      margin-bottom: 0;
+    }
+  }
+}

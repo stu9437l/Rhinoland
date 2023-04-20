@@ -1,5 +1,5 @@
 .form-control {
-  height: 50px;
+  min-height: 50px;
   border-radius: $border-radius;
   background-color: white;
   outline: 0;
@@ -40,4 +40,9 @@
   &::-webkit-slider-runnable-track {
     background-color: $light-white-color;
   }
+}
+label {
+  font-size: 18px;
+  color: $black-color;
+  margin-bottom: 5px;
 }

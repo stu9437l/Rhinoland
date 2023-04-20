@@ -9,9 +9,37 @@
   }
   &__description {
     text-align: center;
-   font-size: $font-md-size;
+    font-size: $font-md-size;
     color: $white-color;
     margin-bottom: 0;
     font-weight: 600;
+  }
+  .contact-card {
+    background-color: $white-color;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 2px solid $light-white-color;
+      left: 5px;
+      bottom: -5px;
+    }
+    .contact {
+      &__label {
+        font-size: $font-md-size;
+        color: $black-color;
+      }
+      &__text {
+        font-size: $font-md-size;
+        // color: $black-70-color;
+        margin-bottom: 0;
+      }
+    }
   }
 }

@@ -1,0 +1,44 @@
+.job-section {
+  .job {
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      &:nth-child(n) {
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+    &__title {
+      font-size: $font-lg-size;
+      color: $black-color;
+      margin-bottom: 10px;
+    }
+    &__date {
+      font-size: $font-md-size;
+      color: $black-70-color;
+      margin-bottom: 30px;
+    }
+    &__subitem {
+      margin-bottom: 30px;
+    }
+    &__subitem__title {
+      font-size: $font-md-size;
+      color: $black-color;
+      margin-bottom: 15px;
+    }
+    &__description {
+      font-size: $font-md-size;
+      color: $black-color;
+      margin-bottom: 0;
+    }
+  }
+}

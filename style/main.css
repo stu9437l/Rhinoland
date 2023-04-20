@@ -118,7 +118,7 @@ a {
 }
 
 .form-control {
-  height: 50px;
+  min-height: 50px;
   border-radius: 0px;
   background-color: white;
   outline: 0;
@@ -157,6 +157,12 @@ a {
 }
 .form-range::-webkit-slider-runnable-track {
   background-color: #f6f6f4;
+}
+
+label {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
 }
 
 .section-heading {
@@ -598,6 +604,54 @@ a {
   color: #777;
 }
 
+.order-procedure .procedure-card {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.order-procedure .procedure__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.order-procedure .procedure__count {
+  font-size: 32px;
+  margin-right: 15px;
+  color: #777;
+  margin-bottom: 20px;
+}
+.order-procedure .procedure__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.order-procedure .procedure__descritption {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 0;
+}
+
+.list-information__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-information__item {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+.list-information__label {
+  width: 200px;
+}
+.list-information--stripe .list-information__item {
+  background-color: #f6f6f4;
+}
+
 header .top-header {
   padding: 10px 0;
   position: sticky;
@@ -1022,6 +1076,31 @@ section.partner-section .partner-company__item img {
   margin-bottom: 0;
   font-weight: 600;
 }
+.section-banner .contact-card {
+  background-color: #ffffff;
+  border-radius: 0px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  position: relative;
+}
+.section-banner .contact-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #f6f6f4;
+  left: 5px;
+  bottom: -5px;
+}
+.section-banner .contact-card .contact__label {
+  font-size: 18px;
+  color: black;
+}
+.section-banner .contact-card .contact__text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
 
 .breadcrumb-section {
   padding: 20px 0;
@@ -1278,21 +1357,6 @@ section.best-deal-section .best-deal__image {
 .product-more-info__tabs-item:hover {
   color: black;
 }
-.product-more-info .additional-information__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.product-more-info .additional-information__item {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #f6f6f4;
-  margin-bottom: 15px;
-}
-.product-more-info .additional-information__label {
-  width: 200px;
-}
 .product-more-info .return-policy__title {
   font-size: 24px;
   font-weight: 600;
@@ -1365,6 +1429,9 @@ section.best-deal-section .best-deal__image {
   padding: 64px 0;
   background-color: #f6f6f4;
 }
+.company-goal__item.bg--light {
+  background-color: #f6f6f4;
+}
 .company-goal__icon {
   height: 64px;
   margin-bottom: 20px;
@@ -1430,6 +1497,99 @@ section.best-deal-section .best-deal__image {
 }
 .owner-information .owner__socialmedia__link:hover {
   color: #a00a0b;
+}
+
+.faq__subtitle {
+  font-size: 24px;
+  color: #a00a0b;
+  margin-bottom: 40px;
+}
+.faq__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.faq__item {
+  padding: 20px 0;
+}
+.faq__item:nth-child(n) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.faq__item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq__question i {
+  font-size: 18px;
+}
+.faq__title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.faq__answer {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.link-category__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link-category__name {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.link-category__name h3 {
+  color: #a00a0b;
+  font-size: 18px;
+}
+.link-category__name h3:hover {
+  text-decoration: underline;
+}
+
+.job-section .job__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.job-section .job__item:nth-child(n) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.job-section .job__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.job-section .job__title {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+.job-section .job__date {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+.job-section .job__subitem {
+  margin-bottom: 30px;
+}
+.job-section .job__subitem__title {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px;
+}
+.job-section .job__description {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

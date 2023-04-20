@@ -21,6 +21,11 @@
 .company-goal {
   padding: 64px 0;
   background-color: $light-white-color;
+  &__item {
+    &.bg--light {
+      background-color: $light-white-color;
+    }
+  }
   &__icon {
     height: 64px;
     margin-bottom: 20px;
