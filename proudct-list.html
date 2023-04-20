@@ -622,7 +622,7 @@
       </section>
       <section class="product-list">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-between">
             <div class="col-md-3">
               <div class="main-filter__wrapper">
                 <div class="main-filter__by main-filter--search">
@@ -683,27 +683,112 @@
                       <label for="wardrobes">Wardrobes</label>
                     </li>
                   </ul>
+                  <a type="button" class="text__link"
+                    >View More <i class="fa-solid fa-plus"></i
+                  ></a>
                 </div>
                 <div class="main-filter__by main-filter--price">
                   <h3 class="main-filter__title">Filter by Price</h3>
                   <div class="price-range">
-                    <span class="start-range"></span> -
-                    <span class="end-range"></span>
+                    <span class="start-range">NPR. 1000 </span> -
+                    <span class="end-range">NPR. 100000</span>
                   </div>
+                  <input type="range" class="form-range" id="customRange1" />
                 </div>
                 <div class="main-filter__by main-filter--reviews">
                   <h3 class="main-filter__title">Filter by Reviews</h3>
-                  <div class="review__stars">
-                    <i class="fa-solid fa-star is-active"></i>
-                    <i class="fa-solid fa-star is-active"></i>
-                    <i class="fa-solid fa-star is-active"></i>
-                    <i class="fa-solid fa-star is-active"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
+                  <ul class="main-filter__options-list">
+                    <li class="main-filter__option">
+                      <input
+                        type="checkbox"
+                        name="category"
+                        id="5-star"
+                        class="form-check-input"
+                      />
+                      <label for="5-star">
+                        <div class="review__stars">
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="main-filter__option">
+                      <input
+                        type="checkbox"
+                        name="category"
+                        id="4-star"
+                        class="form-check-input"
+                      />
+                      <label for="4-star">
+                        <div class="review__stars">
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="main-filter__option">
+                      <input
+                        type="checkbox"
+                        name="category"
+                        id="3-star"
+                        class="form-check-input"
+                      />
+                      <label for="3-star">
+                        <div class="review__stars">
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="main-filter__option">
+                      <input
+                        type="checkbox"
+                        name="category"
+                        id="2-star"
+                        class="form-check-input"
+                      />
+                      <label for="2-star">
+                        <div class="review__stars">
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="main-filter__option">
+                      <input
+                        type="checkbox"
+                        name="category"
+                        id="1-star"
+                        class="form-check-input"
+                      />
+                      <label for="1-star">
+                        <div class="review__stars">
+                          <i class="fa-solid fa-star is-active"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-9">
+
+            <div class="col-md-8">
               <div class="search-result__form">
                 <h3 class="search-result__title">
                   Showing <span class="text-red">34</span> results
@@ -722,19 +807,30 @@
                 <li class="product-list__item">
                   <div class="row">
                     <div class="col-4">
-                      <div class="product-list__image">
-                        <img src="" alt="" />
-                      </div>
+                      <a href="" class="product__image">
+                        <img
+                          class="img__fluid"
+                          src="https://rhinolandfurniture.com/assets/admin/images/product/16638522917423_227d.JPG"
+                          alt=""
+                        />
+                      </a>
                     </div>
                     <div class="col-md-8">
                       <div class="product__detail">
-                        <h2 class="product__name">
-                          Custom Made Chairs and Stools
-                        </h2>
+                        <a href="">
+                          <h2 class="product__name">
+                            Custom Made Chairs and Stools
+                          </h2>
+                        </a>
                         <h4 class="product__price">
                           <span class="actual__price"> NRS. 7999 </span>
                           <span class="marked__price">NRS. 90000</span>
                         </h4>
+                        <p class="product__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore architecto tenetur laudantium natus
+                          quaerat reiciendis excepturi, ut at ipsam iste itaque?
+                        </p>
                         <div class="product__review">
                           <div class="review__stars">
                             <i class="fa-solid fa-star is-active"></i>
@@ -743,7 +839,134 @@
                             <i class="fa-solid fa-star is-active"></i>
                             <i class="fa-solid fa-star"></i>
                           </div>
-                          <div class="reviews__count">(12 Reviews)</div>
+                          <div class="review__count">(12 Reviews)</div>
+                        </div>
+                        <button class="button button--red">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="" class="product__image">
+                        <img
+                          class="img__fluid"
+                          src="https://rhinolandfurniture.com/assets/admin/images/product/16638522917423_227d.JPG"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="product__detail border-before">
+                        <a href="">
+                          <h2 class="product__name">
+                            Custom Made Chairs and Stools
+                          </h2>
+                        </a>
+                        <h4 class="product__price">
+                          <span class="actual__price"> NRS. 7999 </span>
+                          <span class="marked__price">NRS. 90000</span>
+                        </h4>
+                        <p class="product__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore architecto tenetur laudantium natus
+                          quaerat reiciendis excepturi, ut at ipsam iste itaque?
+                        </p>
+                        <div class="product__review">
+                          <div class="review__stars">
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <div class="review__count">(12 Reviews)</div>
+                        </div>
+                        <button class="button button--red">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="" class="product__image">
+                        <img
+                          class="img__fluid"
+                          src="https://rhinolandfurniture.com/assets/admin/images/product/16638522917423_227d.JPG"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="product__detail">
+                        <a href="">
+                          <h2 class="product__name">
+                            Custom Made Chairs and Stools
+                          </h2>
+                        </a>
+                        <h4 class="product__price">
+                          <span class="actual__price"> NRS. 7999 </span>
+                          <span class="marked__price">NRS. 90000</span>
+                        </h4>
+                        <p class="product__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore architecto tenetur laudantium natus
+                          quaerat reiciendis excepturi, ut at ipsam iste itaque?
+                        </p>
+                        <div class="product__review">
+                          <div class="review__stars">
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <div class="review__count">(12 Reviews)</div>
+                        </div>
+                        <button class="button button--red">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product-list__item">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="" class="product__image">
+                        <img
+                          class="img__fluid"
+                          src="https://rhinolandfurniture.com/assets/admin/images/product/16638522917423_227d.JPG"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="product__detail">
+                        <a href="">
+                          <h2 class="product__name">
+                            Custom Made Chairs and Stools
+                          </h2>
+                        </a>
+                        <h4 class="product__price">
+                          <span class="actual__price"> NRS. 7999 </span>
+                          <span class="marked__price">NRS. 90000</span>
+                        </h4>
+                        <p class="product__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore architecto tenetur laudantium natus
+                          quaerat reiciendis excepturi, ut at ipsam iste itaque?
+                        </p>
+                        <div class="product__review">
+                          <div class="review__stars">
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star is-active"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <div class="review__count">(12 Reviews)</div>
                         </div>
                         <button class="button button--red">Add to cart</button>
                       </div>

@@ -7,6 +7,7 @@
 
 // components scss files
 @import "./components/buttons/solid";
+@import "./components/buttons/text-link";
 @import "./components/input";
 @import "./components/buttons/outline";
 @import "./components/title";
@@ -17,6 +18,8 @@
 @import "./components/modal/main-search";
 @import "./components/slider";
 @import "./components/_search-result-form";
+@import "./components/main-filter";
+@import "./components/cards/product-list";
 
 // layout scss files
 @import "./layout/header";
