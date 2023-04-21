@@ -64,7 +64,7 @@ $(document).ready(function () {
     ],
   });
 
-  //product media images
+  //product media slider
   $(".product-slider__list").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -74,13 +74,30 @@ $(document).ready(function () {
     asNavFor: ".product-thumbnail__list",
   });
   $(".product-thumbnail__list").slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    asNavFor: ".product-slider__list",
     dots: false,
-    centerMode: true,
+    vertical: true,
+    arrows: true,
     focusOnSelect: true,
+    // centerMode: false,
+    asNavFor: ".product-slider__list",
   });
+
+  //product more information tabs
+  $(".product-more-info__tabs-nav .product-more-info__tabs-item").each(
+    function () {
+      $(this).click(function () {
+        $(
+          ".product-more-info__tabs-nav .product-more-info__tabs-item"
+        ).removeClass("active");
+        $(this).addClass("active");
+        const target = $(this).data("target");
+        $(".product-more-info__tabs-content").removeClass("show");
+        $(`#${target}`).addClass("show");
+      });
+    }
+  );
 
   //mobile menu dropdown
   $(".mobile-menu .main-nav__link").click(function () {
@@ -99,4 +116,9 @@ $(document).ready(function () {
         .togglehtml(" <i class='fa-solid fa-minus'></i>");
     });
   });
+});
+
+//view more filter option
+$("#view__more__filter__category").click(function () {
+  $(".main-filter__options-list li:nth-child(n+11)").slideToggle();
 });

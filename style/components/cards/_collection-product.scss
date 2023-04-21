@@ -28,9 +28,10 @@
     margin-bottom: 10px;
   }
   &__count {
-    font-size: 14px;
+    font-size: $font-md-size;
     color: $black-70-color;
     margin-bottom: 0;
+    font-weight: 600;
   }
   &:hover {
     .collection-card__title {

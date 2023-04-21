@@ -9,6 +9,9 @@
     color: $black-color;
     margin-bottom: 20px;
   }
+  li:nth-child(n + 11) {
+    display: none;
+  }
   &__options-list {
     list-style: none;
     margin: 0;
@@ -29,6 +32,7 @@
     label {
       font-size: 18px;
       color: $black-color;
+      margin-bottom: 0 !important;
       .review__stars {
         i {
           font-size: $font-md-size;

@@ -1,9 +1,18 @@
 .product-detail {
   .product-thumbnail {
     &__list {
-      max-width: 100px;
+      max-width: 120px;
       margin-right: 20px !important;
       flex-shrink: 0;
+      height: 480px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $light-white-color;
+      }
       .slick-list {
         padding: 0 !important;
       }
@@ -17,6 +26,7 @@
       object-fit: cover;
       object-position: center;
       margin-bottom: 20px;
+      cursor: pointer;
     }
   }
   .product-slider {
@@ -40,7 +50,7 @@
       margin-bottom: 20px;
     }
     &__description {
-      font-size: $font-lg-size;
+      font-size: $font-md-size;
       color: $black-color;
       margin-bottom: 0;
     }
@@ -193,6 +203,12 @@
     }
     &:hover {
       color: $black-color;
+    }
+  }
+  &__tabs-content {
+    display: none;
+    &.show {
+      display: block;
     }
   }
 
