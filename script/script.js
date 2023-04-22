@@ -72,16 +72,25 @@ $(document).ready(function () {
     dots: false,
     fade: true,
     asNavFor: ".product-thumbnail__list",
+    responsive: [
+      {
+        breakpoint: 678,
+        settings: {
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
   });
   $(".product-thumbnail__list").slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     dots: false,
     vertical: true,
-    arrows: true,
-    focusOnSelect: true,
-    // centerMode: false,
     asNavFor: ".product-slider__list",
+    verticalSwiping: true,
+    focusOnSelect: true,
   });
 
   //product more information tabs
@@ -125,4 +134,53 @@ $(document).ready(function () {
 //view more filter option
 $("#view__more__filter__category").click(function () {
   $(".main-filter__options-list li:nth-child(n+11)").slideToggle();
+});
+
+
+// new banner 
+
+$(".slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".slider-nav",
+});
+$(".slider-nav").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  vertical: true,
+  asNavFor: ".slider-for",
+  dots: false,
+  arrows:false,
+  focusOnSelect: true,
+  verticalSwiping: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        vertical: false,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        vertical: false,
+      },
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+      },
+    },
+  ],
 });

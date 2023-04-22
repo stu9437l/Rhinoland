@@ -204,8 +204,8 @@ $web: 1280px;
   .square {
     &--arrows {
       .slick-arrow {
-        height: 35px;
-        width: 35px;
+        height: 45px;
+        width: 45px;
       }
     }
   }
@@ -504,10 +504,7 @@ $web: 1280px;
     padding-bottom: 0;
     .product-thumbnail {
       &__list {
-        max-width: 100% !important;
-        margin-right: 0 !important;
-        height: auto;
-        overflow-y: hidden;
+        display: none;
       }
       &__image {
         width: 50px !important;
