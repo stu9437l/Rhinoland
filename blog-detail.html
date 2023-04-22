@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rinoland</title>
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- fontawesome links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- slick slider links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="./style/main.css" />
+</head>
+
+<body>
+  <!-- search modal  -->
+  <div class="modal search-modal" id="main__search__modal">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="search-modal__header">
+              <div class="section-heading mb-0">
+                <h2 class="section-heading__title">
+                  Search your favorite items
+                </h2>
+              </div>
+              <div class="modal-close">
+                <button class="modal-close__button" data-bs-dismiss="modal">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+            <div class="search-modal__body">
+              <form action="">
+                <div class="search-modal__form">
+                  <input class="form-control" type="text" name="main-search" placeholder="Search any keyword" />
+                  <button class="button button--large button--red">
+                    <span class="d-none d-md-inline-block">Search</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+              <div class="trending-keywords">
+                <div class="section-heading">
+                  <h2 class="section-heading__title">Trending keywords</h2>
+                </div>
+                <ul class="trending-keywords__list">
+                  <li class="trending-keywords__item">
+                    <a href="" class="trending-keywords__link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>Dining Table</span>
+                    </a>
+                  </li>
+                  <li class="trending-keywords__item">
+                    <a href="" class="trending-keywords__link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>Dining Table</span>
+                    </a>
+                  </li>
+                  <li class="trending-keywords__item">
+                    <a href="" class="trending-keywords__link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>Dining Table</span>
+                    </a>
+                  </li>
+                  <li class="trending-keywords__item">
+                    <a href="" class="trending-keywords__link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>Dining Table</span>
+                    </a>
+                  </li>
+                  <li class="trending-keywords__item">
+                    <a href="" class="trending-keywords__link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>Dining Table</span>
+                    </a>
+                  </li>
+                  <li class="trending-keywords__item">
+                    <a href="" class="trending-keywords__link">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <span>Dining Table</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="famous-products d-none d-md-block">
+                <div class="section-heading">
+                  <h2 class="section-heading__title">Famous Products</h2>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="product-card mb-0">
+                      <a href="" class="product-card__image">
+                        <img class="img__fluid" src="./image/products/product.png" alt="" />
+                      </a>
+
+                      <a href="">
+                        <h3 class="product-card__title">
+                          Custom made chairs and stools
+                        </h3>
+                      </a>
+
+                      <p class="product-card__price">
+                        <span class="actual-price"> NRS. 16,000 </span>
+                        <span class="marked-price"> 19,000 </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="product-card mb-0">
+                      <a href="" class="product-card__image">
+                        <img class="img__fluid" src="./image/products/product.png" alt="" />
+                      </a>
+
+                      <a href="">
+                        <h3 class="product-card__title">
+                          Custom made chairs and stools
+                        </h3>
+                      </a>
+
+                      <p class="product-card__price">
+                        <span class="actual-price"> NRS. 16,000 </span>
+                        <span class="marked-price"> 19,000 </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="product-card mb-0">
+                      <a href="" class="product-card__image">
+                        <img class="img__fluid" src="./image/products/product.png" alt="" />
+                      </a>
+
+                      <a href="">
+                        <h3 class="product-card__title">
+                          Custom made chairs and stools
+                        </h3>
+                      </a>
+
+                      <p class="product-card__price">
+                        <span class="actual-price"> NRS. 16,000 </span>
+                        <span class="marked-price"> 19,000 </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="product-card mb-0">
+                      <a href="" class="product-card__image">
+                        <img class="img__fluid" src="./image/products/product.png" alt="" />
+                      </a>
+
+                      <a href="">
+                        <h3 class="product-card__title">
+                          Custom made chairs and stools
+                        </h3>
+                      </a>
+
+                      <p class="product-card__price">
+                        <span class="actual-price"> NRS. 16,000 </span>
+                        <span class="marked-price"> 19,000 </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile offcanvas menu -->
+  <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobile-nav__offcanvas">
+    <div class="offcanvas-header">
+      <a href="" class="brand-logo">
+        <img src="./image/original-logo.png" alt="" />
+      </a>
+
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Our Product</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">On Sale</a>
+        </li>
+        <li class="main-nav__item">
+          <a type="button" class="main-nav__link">Collections <i class="fa-solid fa-chevron-down"></i></a>
+          <div class="mob-dropdown-menu">
+            <div class="mb-3">
+              <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+              <ul class="mob-dropdown-menu__list">
+                <li>
+                  <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">J & M Black shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TBS boots</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SP Grey shoes</a>
+                </li>
+              </ul>
+              <a href="" class="mob-dropdown-menu__link">
+                <span> Show More</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="mb-3">
+              <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+              <ul class="mob-dropdown-menu__list">
+                <li>
+                  <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">J & M Black shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TBS boots</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SP Grey shoes</a>
+                </li>
+              </ul>
+              <a href="" class="mob-dropdown-menu__link">
+                <span> Show More</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="mb-3">
+              <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+              <ul class="mob-dropdown-menu__list">
+                <li>
+                  <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">J & M Black shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TBS boots</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SP Grey shoes</a>
+                </li>
+              </ul>
+              <a href="" class="mob-dropdown-menu__link">
+                <span> Show More</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="mb-3">
+              <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+              <ul class="mob-dropdown-menu__list">
+                <li>
+                  <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">J & M Black shoes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TBS boots</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SP Grey shoes</a>
+                </li>
+              </ul>
+              <a href="" class="mob-dropdown-menu__link">
+                <span> Show More</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">New Designs</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Career</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Create Account</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="column-start d-none d-md-block">
+            <ul class="social-media__list">
+              <li class="social-media__item">
+                <a href="" class="social-media__link"><i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link"><i class="fa-brands fa-square-youtube"></i></a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link"><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+              <li class="social-media__item">
+                <a href="" class="social-media__link"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="column-center">
+            <div class="top-offer__banner">
+              <p class="top-offer__text">
+                Up to 505 Off Sitewide + Free Shipping
+              </p>
+            </div>
+          </div>
+          <div class="column-end d-none d-md-block">
+            <ul class="quick-link__list">
+              <li class="quick-link__item">
+                <a href="" class="quick-link__link">Home</a>
+              </li>
+              <li class="quick-link__item">
+                <a href="" class="quick-link__link">Contact</a>
+              </li>
+              <li class="quick-link__item">
+                <a href="" class="quick-link__link">Faqs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <nav class="d-flex align-items-center position-relative">
+          <div class="column-start">
+            <a href="" class="brand-logo">
+              <img src="./image//new-logo.png" alt="" class="brand-logo__image" />
+            </a>
+          </div>
+          <div class="column-center d-none d-md-block">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Our Product</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">On Sale</a>
+              </li>
+              <li class="main-nav__item dropdown">
+                <a href="" class="main-nav__link" data-bs-toggle="dropdown">Collections <i
+                    class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                      <ul class="dropdown-menu__list">
+                        <li>
+                          <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">J & M Black shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">TBS boots</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">SP Grey shoes</a>
+                        </li>
+                      </ul>
+                      <a href="" class="dropdown-menu__link">
+                        <span> Show More</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                      <ul class="dropdown-menu__list">
+                        <li>
+                          <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">J & M Black shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">TBS boots</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">SP Grey shoes</a>
+                        </li>
+                      </ul>
+                      <a href="" class="dropdown-menu__link">
+                        <span> Show More</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                      <ul class="dropdown-menu__list">
+                        <li>
+                          <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">J & M Black shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">TBS boots</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">SP Grey shoes</a>
+                        </li>
+                      </ul>
+                      <a href="" class="dropdown-menu__link">
+                        <span> Show More</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                      <ul class="dropdown-menu__list">
+                        <li>
+                          <a class="dropdown-item" href="#">Rhinoland CH white Shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">J & M Black shoes</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">TBS boots</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">SP Grey shoes</a>
+                        </li>
+                      </ul>
+                      <a href="" class="dropdown-menu__link">
+                        <span> Show More</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">New Designs</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Career</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column-end ms-auto">
+            <ul class="icon-menu__list">
+              <li class="icon-menu__item d-inline-block d-md-none">
+                <a type="button" class="icon-menu__link" data-bs-toggle="offcanvas"
+                  data-bs-target="#mobile-nav__offcanvas">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </li>
+              <li class="icon-menu__item">
+                <a type="button" class="icon-menu__link" data-bs-toggle="modal" data-bs-target="#main__search__modal">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+              <li class="icon-menu__item d-none d-md-inline-block">
+                <a href="" class="icon-menu__link">
+                  <i class="fa-regular fa-user"></i>
+                </a>
+              </li>
+              <li class="icon-menu__item">
+                <a href="" class="icon-menu__link">
+                  <i class="fa-regular fa-heart"></i>
+                  <div class="cart-count">3</div>
+                </a>
+              </li>
+              <li class="icon-menu__item">
+                <a href="" class="icon-menu__link">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="breadcrumb-section">
+      <div class="container">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="" class="breadcrumb__link">Home</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="" class="breadcrumb__link">Blogs</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link is-active">Blog Detail</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="blog-detail">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-8 mb-4 mb-md-0">
+            <div class="blog-detail__heading">
+              <h2 class="blog-detail__title">
+                Wood and Iron furniture: Beury with durability and cheap maintenance
+              </h2>
+              <p class="blog-detail__date">
+                Aug 11, 2022
+              </p>
+            </div>
+            <div class="blog__image">
+              <img class="img__fluid"
+                src="https://rhinolandfurniture.com/assets/admin/images/blog/15719258224179_blog%20photo.jpg" alt="">
+            </div>
+            <div class="blog-detail__content">
+              <p>
+                When we describe our homes decor we often use words like Rustic, Contemporary or Country style but the
+                truth is that few
+                of us have homes that fit strictly within any one decorating style. More often than not, we adopt
+                characteristics of a
+                style that we find pleasing, blend it with our collection of beloved possessions, and arrive at a home
+                that is uniquely
+                our own.
+
+                No matter what style you prefer, chances are quite good that your home will be enhanced by the addition
+                of
+                handcrafted
+                wood and iron furniture. The beauty of hand finished wood combined with the strength and elegance of
+                hand
+                forged iron
+                lends itself to many different pieces, styles and rooms. And whether it's the rustic elegance of a wood
+                and iron bed, or
+                the old world styling of a wood and iron dining table, the timeless quality of these natural materials
+                is
+                sure to play a
+                pleasing role in your home.
+              </p>
+
+              <p>
+                <strong>Wood and Iron Furniture for your Lodge or Cabin
+                </strong>
+              </p>
+              <p>
+                When it comes to a lodge or cabin, natural materials create the basic foundation in their design and the
+                use of wood
+                furniture is almost essential to blend with the ambience of the woodland surroundings. But the
+                furnishing
+                in a mountain
+                getaway does not have to be exclusively wood. Another material used for centuries in rustic furniture is
+                wrought iron,
+                and what could be better than a combination of the two. There are many rustic wood and iron furniture
+                pieces available
+                such as the wonderfully unique Branches Bed (pictured). In fact it is possible to find a rustic wood and
+                iron example in
+                just about any piece of furniture you can think of. And why stop with the furniture, handcrafted wooden
+                walls provide a
+                ready-made backdrop for the rustic appeal of iron. Because of its natural texture and sturdy character,
+                iron is an
+                excellent choice for a lodge or cabins rustic style.
+              </p>
+
+              <p>
+                <strong>Wood and Iron Furniture with Old World Style
+                </strong>
+              </p>
+              <p>
+                The central theme of Rhinoland Furniture is food, wine and nature. Deep earthy colors and natural
+                textures
+                like stone,
+                aged wood, iron and copper, echo the feel of the Nepal countryside. This is the perfect atmosphere for a
+                well chosen
+                piece of wood and iron furniture. A sideboard or buffet and a big farmhouse type dining room table,
+                large,
+                simple and
+                sturdy are happily at home in any rustic old world style decor.
+
+                Decorative accessories can also do a lot to give your room a unique allure and here again the rustic
+                appeal of wrought
+                iron makes it a popular choice. Place an iron wine rack on your counter filled you're your favorite
+                vintage, adorn your
+                table with wrought iron candle holders, or hang a decorative piece of metal art on the wall. Use your
+                creativity and
+                soon with the right colors, accessories and accents you will feel like you're in a villa on the Italian
+                countryside.
+                Rhinoland will be more than happy to help you for your initiatives.
+              </p>
+
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2 class="text-lg mb-4">
+            RELATED BLOGS
+
+            </h2>
+            <ul class="recent-blog__list">
+              <li>
+                <a href="" class="recent-blog__item">
+                  <div class="recent-blog__image">
+                    <img class="img__fluid" src="https://rhinolandfurniture.com/assets/admin/images/slider/16397609354436_Prabin%20L-Shaped%20(7).jpg" alt="">
+                  </div>
+                  <div class="ms-4">
+                    <h3 class="recent-blog__title">
+                      Wood and Iron Furniture for your Lodge or Cabin
+                    </h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" class="recent-blog__item">
+                  <div class="recent-blog__image">
+                    <img class="img__fluid"
+                      src="https://rhinolandfurniture.com/assets/admin/images/slider/16397609354436_Prabin%20L-Shaped%20(7).jpg"
+                      alt="">
+                  </div>
+                  <div class="ms-4">
+                    <h3 class="recent-blog__title">
+                      Wood and Iron Furniture for your Lodge or Cabin
+                    </h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" class="recent-blog__item">
+                  <div class="recent-blog__image">
+                    <img class="img__fluid"
+                      src="https://rhinolandfurniture.com/assets/admin/images/slider/16397609354436_Prabin%20L-Shaped%20(7).jpg"
+                      alt="">
+                  </div>
+                  <div class="ms-4">
+                    <h3 class="recent-blog__title">
+                      Wood and Iron Furniture for your Lodge or Cabin
+                    </h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="service-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="service-item__image">
+                <img class="img-fluid" src="./image/service/customer-service.png" alt="" />
+              </div>
+              <div class="ms-4">
+                <h5 class="service-item__title">Free Shipping</h5>
+                <p class="service-item__description">
+                  A Delivery Service you can depend on can depend on
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="service-item__image">
+                <img class="img-fluid" src="./image/service/customer-service.png" alt="" />
+              </div>
+              <div class="ms-4">
+                <h5 class="service-item__title">Free Shipping</h5>
+                <p class="service-item__description">
+                  A Delivery Service you can depend on can depend on
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="service-item__image">
+                <img class="img-fluid" src="./image/service/customer-service.png" alt="" />
+              </div>
+              <div class="ms-4">
+                <h5 class="service-item__title">Free Shipping</h5>
+                <p class="service-item__description">
+                  A Delivery Service you can depend on can depend on
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <div class="service-item__image">
+                <img class="img-fluid" src="./image/service/customer-service.png" alt="" />
+              </div>
+              <div class="ms-4">
+                <h5 class="service-item__title">Free Shipping</h5>
+                <p class="service-item__description">
+                  A Delivery Service you can depend on can depend on
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partner-section">
+      <div class="container">
+        <div class="section-heading justify-content-center">
+          <h3 class="section-heading__title">Trusted By</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-9 mx-auto">
+            <div class="partner-company__list p-4">
+              <div class="partner-company__item">
+                <img src="https://thumbs.dreamstime.com/z/business-company-logo-27438249.jpg" alt="" />
+              </div>
+              <div class="partner-company__item">
+                <img src="https://thumbs.dreamstime.com/z/business-company-logo-27438249.jpg" alt="" />
+              </div>
+              <div class="partner-company__item">
+                <img src="https://thumbs.dreamstime.com/z/business-company-logo-27438249.jpg" alt="" />
+              </div>
+              <div class="partner-company__item">
+                <img src="https://thumbs.dreamstime.com/z/business-company-logo-27438249.jpg" alt="" />
+              </div>
+              <div class="partner-company__item">
+                <img src="https://thumbs.dreamstime.com/z/business-company-logo-27438249.jpg" alt="" />
+              </div>
+              <div class="partner-company__item">
+                <img src="https://thumbs.dreamstime.com/z/business-company-logo-27438249.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="top-footer">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="owner-profile">
+                <div class="owner-profile__image">
+                  <img class="img__fluid"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                    alt="" />
+                </div>
+                <h3 class="owner-profile__name">Bijaya Yadav</h3>
+                <p class="owner-profile__position">Manager of Rhinoland</p>
+                <ul class="footer-nav">
+                  <li class="footer-nav__item">
+                    <a type="button" class="footer-nav__link text--black">
+                      <i class="fa-solid fa-location-dot"></i>
+                      Bishalnagar-5, Kathmandu, Nepal
+                    </a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a type="button" class="footer-nav__link text--black">
+                      <i class="fa-solid fa-phone"></i>
+                      9800123456
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+              <h3 class="footer-nav__title">Quick Links</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> About us </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Contact us </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Privacy Policy </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Term & Condition </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Why choose us </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+              <h3 class="footer-nav__title">Services</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Returns </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Financing </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Shipping </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Faqs </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Faqs </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3 class="footer-nav__title">NewsLetter</h3>
+              <p class="footer-nav__description">
+                Subscribe to receive updates, access to exclusive deals.
+              </p>
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a type="button" class="footer-nav__link">
+                    <i class="fa-solid fa-envelope"></i>
+                    Bishalnagar-5, Kathmandu, Nepal
+                  </a>
+                </li>
+              </ul>
+              <form action="">
+                <div class="newsletter-form">
+                  <input class="form-control" type="text" name="email" id="email" placeholder="Enter Email Address" />
+                  <button class="button button--square button--red">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p class="copyright-text">
+          Copyright © 2023 Rhinoland. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </main>
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- jquery script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- slick slider script cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- custom script file -->
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

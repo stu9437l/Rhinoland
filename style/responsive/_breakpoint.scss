@@ -828,4 +828,18 @@ $web: 1280px;
       margin-bottom: 5px;
     }
   }
+
+  // blogs category
+  .blog-detail {
+    &__title {
+      font-size: $font-lg-size;
+    }
+
+    .recent-blog {
+      &__image {
+        width: 100px;
+        height: 60px;
+      }
+    }
+  }
 }
