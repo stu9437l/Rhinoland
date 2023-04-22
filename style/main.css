@@ -49,8 +49,10 @@ body {
 .img__fluid {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .bg-property {
@@ -77,7 +79,7 @@ a {
 }
 .button--red {
   background-color: #a00a0b;
-  border: 1px solid #a00a0b;
+  border: 2px solid #a00a0b;
   color: white;
 }
 .button i {
@@ -126,6 +128,9 @@ a {
   box-shadow: none !important;
   font-size: 18px;
 }
+.form-control::-moz-placeholder {
+  color: #777;
+}
 .form-control::placeholder {
   color: #777;
 }
@@ -163,6 +168,44 @@ label {
   font-size: 18px;
   color: black;
   margin-bottom: 5px;
+}
+
+.button-outline {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  text-decoration: none;
+  border-radius: 0px;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 18px;
+}
+.button-outline--red {
+  border: 2px solid #a00a0b;
+  color: #a00a0b;
+}
+.button-outline i {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.button-outline:hover {
+  background-color: #a00a0b;
+  color: white;
+  border-color: #a00a0b;
+}
+.button-outline--square {
+  width: 50px;
+  padding: 0 !important;
+  flex-shrink: 0;
+  border-radius: 0px;
+}
+.button-outline--square i {
+  margin: 0;
+  padding: 0;
 }
 
 .section-heading {
@@ -652,6 +695,7 @@ label {
 }
 .list-information__label {
   width: 200px;
+  margin-right: 15px;
 }
 .list-information--stripe .list-information__item {
   background-color: #f6f6f4;
@@ -1035,13 +1079,13 @@ section.testimonial-section .slick-arrow {
   justify-content: center;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid #777;
+  border: 1px solid #a00a0b;
   top: 110%;
 }
 section.testimonial-section .slick-arrow::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: black;
+  color: #a00a0b;
 }
 section.testimonial-section .slick-arrow.slick-prev {
   content: "\f054";
@@ -1057,6 +1101,12 @@ section.testimonial-section .slick-arrow:hover::before {
 section.testimonial-section .slick-disabled {
   opacity: 0.3;
   cursor: not-allowed;
+}
+section .offer__banner {
+  display: block;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
 }
 
 section.partner-section .partner-company__list {
@@ -1209,8 +1259,10 @@ section.best-deal-section .best-deal__image {
 .product-detail .product-thumbnail__image {
   width: 100px !important;
   height: 100px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -1221,8 +1273,10 @@ section.best-deal-section .best-deal__image {
 .product-detail .product-slider__image {
   width: 100%;
   height: 600px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .product-detail .product__name {
   font-size: 32px;
@@ -1555,6 +1609,7 @@ section.best-deal-section .best-deal__image {
   cursor: pointer;
 }
 .faq__question i {
+  margin-left: 20px;
   font-size: 18px;
 }
 .faq__title {
@@ -1631,13 +1686,13 @@ section.best-deal-section .best-deal__image {
     display: block;
   }
   .search-result__title {
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     margin-bottom: 10px;
   }
   .list-information__item {
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .list-information__label {
@@ -1655,11 +1710,11 @@ section.best-deal-section .best-deal__image {
     padding: 0 4px;
   }
   .breadcrumb-section .breadcrumb__link {
-    font-size: 16px;
+    font-size: 18px;
   }
   .breadcrumb-section .breadcrumb__link.is-active {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1667,48 +1722,45 @@ section.best-deal-section .best-deal__image {
   .button {
     height: 40px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
-  .button--red {
-    background-color: #a00a0b;
-    border: 1px solid #a00a0b;
-    color: white;
-  }
-  .button i {
-    font-size: 16px;
+  .button s i {
+    font-size: 18px;
     margin-left: 10px;
-  }
-  .button:hover {
-    color: #a00a0b;
-    background-color: transparent;
-    border-color: #a00a0b;
   }
   .button--square {
     width: 40px;
-    padding: 0 !important;
-    flex-shrink: 0;
-    border-radius: 0px;
   }
-  .button--square i {
-    margin: 0;
-    padding: 0;
+  .button-outline {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  .button-outline i {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .button-outline--square {
+    width: 40px;
   }
   .form-control {
     min-height: 40px;
-    height: 40px;
+  }
+  .form-control::-moz-placeholder {
+    font-size: 18px;
   }
   .form-control::placeholder {
-    font-size: 16px;
+    font-size: 18px;
   }
   .section-heading {
     margin-bottom: 20px;
   }
   .section-heading__title {
-    font-size: 20px;
+    font-size: 24px;
   }
   .section-heading__link {
     white-space: nowrap;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     align-items: center;
   }
@@ -1717,7 +1769,7 @@ section.best-deal-section .best-deal__image {
     margin-left: 5px;
   }
   .section-heading__sub--title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .collection-card {
     margin-bottom: 60px;
@@ -1730,7 +1782,7 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 5px;
   }
   .collection-card__count {
-    font-size: 16px;
+    font-size: 18px;
     color: #777;
     margin-bottom: 0;
   }
@@ -1752,7 +1804,7 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 0;
   }
   .product-card__price .actual-price {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-card__price .marked-price {
     font-size: 13px;
@@ -1767,18 +1819,21 @@ section.best-deal-section .best-deal__image {
     padding: 15px;
   }
   .blog-card__date {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px;
   }
   .blog-card__title {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .blog-card__link {
-    font-size: 16px;
+    font-size: 18px;
   }
   .blog-card__link i {
     font-size: 11px;
+  }
+  .order-procedure .procedure-card {
+    width: 100%;
   }
   .service-section {
     margin: 0px 0 0 0;
@@ -1797,11 +1852,13 @@ section.best-deal-section .best-deal__image {
     width: 40px;
   }
   .service-section .service-item__title {
-    font-size: 16px;
+    font-family: "Yeseva One", cursive;
+    font-size: 18px;
     margin-bottom: 5px;
+    font-weight: 400;
   }
   .service-section .service-item__description {
-    font-size: 16px;
+    font-size: 18px;
   }
   .square--arrows .slick-arrow {
     height: 35px;
@@ -1843,7 +1900,7 @@ section.best-deal-section .best-deal__image {
   }
   .search-modal .trending-keywords__link {
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 5px;
   }
   .search-modal .trending-keywords__link i {
@@ -1857,10 +1914,10 @@ section.best-deal-section .best-deal__image {
     width: 100%;
   }
   header .top-header .column-center .top-offer__text {
-    font-size: 16px;
+    font-size: 18px;
   }
   header .top-header .column-end .quick-link__link {
-    font-size: 16px;
+    font-size: 18px;
   }
   header .bottom-header {
     padding: 10px 0;
@@ -1874,8 +1931,8 @@ section.best-deal-section .best-deal__image {
     width: auto;
   }
   header .bottom-header .column-end .icon-menu__link {
-    font-size: 18px;
-    margin-left: 15px;
+    font-size: 24px;
+    margin-left: 20px;
   }
   header .bottom-header .column-end .icon-menu__link .cart-count {
     height: 18px;
@@ -1899,11 +1956,11 @@ section.best-deal-section .best-deal__image {
     padding: 30px 0 50px 0;
   }
   section.testimonial-section .testimonial__title {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
   section.testimonial-section .testimonial__description {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 40px;
   }
   section.testimonial-section .testimony-profile__image {
@@ -1915,7 +1972,7 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 5px;
   }
   section.testimonial-section .testimony-profile__position {
-    font-size: 16px;
+    font-size: 18px;
   }
   section.testimonial-section .slick-arrow {
     height: 40px;
@@ -1924,7 +1981,7 @@ section.best-deal-section .best-deal__image {
     top: 100%;
   }
   section.testimonial-section .slick-arrow.slick-prev {
-    left: 65%;
+    left: 72%;
   }
   section.testimonial-section .slick-arrow.slick-next {
     right: 0%;
@@ -1951,7 +2008,7 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 5px;
   }
   footer .top-footer .owner-profile__position {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: #f6f6f4;
   }
@@ -1961,20 +2018,20 @@ section.best-deal-section .best-deal__image {
     margin: 0;
   }
   footer .top-footer .footer-nav__title {
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     margin-bottom: 10px;
   }
   footer .top-footer .footer-nav__link {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
   footer .top-footer .footer-nav__link i {
     margin-right: 5px;
     font-size: 12px;
   }
   footer .top-footer .footer-nav__description {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px;
   }
   footer .top-footer .newsletter-form {
@@ -1990,22 +2047,45 @@ section.best-deal-section .best-deal__image {
     padding: 10px 0;
   }
   footer .bottom-footer .copyright-text {
-    font-size: 16px;
+    font-size: 18px;
+  }
+  .section-banner__title {
+    font-size: 24px;
+  }
+  .section-banner__description {
+    font-weight: 400;
+  }
+  .section-banner .contact-card::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #f6f6f4;
+    left: 5px;
+    bottom: -5px;
+  }
+  .section-banner .contact-card .contact__label {
+    font-size: 18px;
+    color: black;
+  }
+  .section-banner .contact-card .contact__text {
+    font-size: 18px;
+    margin-bottom: 0;
   }
   section.best-deal-section {
     padding: 40px 0;
     z-index: 1;
   }
   section.best-deal-section .best-deal__subtitle {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   section.best-deal-section .best-deal__title {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
   section.best-deal-section .best-deal__description {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
   }
   section.best-deal-section .best-deal__image {
@@ -2035,12 +2115,12 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 20px;
   }
   .product-detail .product__name {
-    font-size: 20px;
+    font-size: 24px;
     color: black;
     margin-bottom: 20px;
   }
   .product-detail .product__description {
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     margin-bottom: 0;
   }
@@ -2048,11 +2128,11 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 20px;
   }
   .product-detail .product__price .actual__price {
-    font-size: 20px;
+    font-size: 24px;
     color: #a00a0b;
   }
   .product-detail .product__price .marked__price {
-    font-size: 16px;
+    font-size: 18px;
     color: #777;
     text-decoration: line-through;
   }
@@ -2062,7 +2142,7 @@ section.best-deal-section .best-deal__image {
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
   }
   .product-detail .product-size__title {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .product-detail .product-size__list {
@@ -2082,7 +2162,7 @@ section.best-deal-section .best-deal__image {
   }
   .product-detail .product-size__item label {
     height: 40px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 20px;
   }
   .product-detail .action-buttons {
@@ -2094,10 +2174,10 @@ section.best-deal-section .best-deal__image {
     border-top: 1px solid rgba(0, 0, 0, 0.075);
   }
   .product-detail .product-organization__label {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-detail .product-organization__text {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-more-info {
     padding-top: 0;
@@ -2112,13 +2192,13 @@ section.best-deal-section .best-deal__image {
   }
   .product-more-info__tabs-item {
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 24px;
   }
   .product-more-info__tabs-content {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-more-info .return-policy__title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -2131,7 +2211,7 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 10px;
   }
   .product-more-info .reviews__title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -2157,11 +2237,11 @@ section.best-deal-section .best-deal__image {
     margin-bottom: 5px;
   }
   .product-more-info .reviews .review__date {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .product-more-info .reviews .review__content {
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     margin-bottom: 0;
   }
@@ -2169,13 +2249,13 @@ section.best-deal-section .best-deal__image {
     white-space: nowrap;
   }
   .product-more-info .reviews .review__stars i {
-    font-size: 16px;
+    font-size: 18px;
   }
   .main-filter__by {
     margin-bottom: 20px;
   }
   .main-filter__title {
-    font-size: 20px;
+    font-size: 24px;
     color: black;
     margin-bottom: 10px;
   }
@@ -2239,18 +2319,54 @@ section.best-deal-section .best-deal__image {
     font-size: 18px;
   }
   .product-list__item .product__price .marked__price {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-list__item .product__description {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-list__item .product__review {
     margin-bottom: 10px;
   }
   .product-list__item .product__review .review__stars i {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-list__item .product__review .review__count {
-    font-size: 16px;
+    font-size: 18px;
+  }
+  .about-company .company__image {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .about-company .company-detail__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .owner-information {
+    padding: 20px 0;
+  }
+  .owner-information .owner__profile {
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .company-goal__icon {
+    margin-bottom: 10px;
+  }
+  .faq__subtitle {
+    margin-bottom: 20px;
+  }
+  .faq__item {
+    padding: 15px 0;
+  }
+  .faq__question i {
+    font-size: 18px;
+  }
+  .faq__title {
+    font-size: 18px;
+  }
+  .faq__answer {
+    margin-top: 10px;
+  }
+  .link-category__name {
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=main.css.map */

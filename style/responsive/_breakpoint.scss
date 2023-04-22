@@ -3,16 +3,16 @@ $tab: 1024px;
 $web: 1280px;
 
 @media (max-width: $mobile) {
-  $font-lg-size: 20px;
-  $font-sm-size: 16px;
+  // $font-lg-size: 20px;
   //   components
+
   .search-result {
     &__form {
       padding-bottom: 30px;
       display: block;
     }
     &__title {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
       color: $black-color;
       margin-bottom: 10px;
     }
@@ -20,7 +20,7 @@ $web: 1280px;
   .list-information {
     &__item {
       padding: 10px 15px;
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
       margin-bottom: 15px;
     }
     &__label {
@@ -39,10 +39,10 @@ $web: 1280px;
         }
       }
       &__link {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
         &.is-active {
           display: inline-block;
-          width: 100px;
+          width: 150px;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
@@ -54,37 +54,34 @@ $web: 1280px;
   .button {
     height: 40px;
     padding: 0 20px;
-    font-size: $font-sm-size;
-    &--red {
-      background-color: $red-color;
-      border: 1px solid $red-color;
-      color: white;
-    }
-    i {
-      font-size: $font-sm-size;
+    font-size: $font-md-size;
+
+    s i {
+      font-size: $font-md-size;
       margin-left: 10px;
-    }
-    &:hover {
-      color: $red-color;
-      background-color: transparent;
-      border-color: $red-color;
     }
     &--square {
       width: 40px;
-      padding: 0 !important;
-      flex-shrink: 0;
-      border-radius: $border-radius;
-      i {
-        margin: 0;
-        padding: 0;
-      }
+    }
+  }
+  .button-outline {
+    height: 40px;
+    padding: 0 20px;
+    font-size: $font-md-size;
+    i {
+      font-size: $font-md-size;
+      margin-left: 10px;
+    }
+
+    &--square {
+      width: 40px;
     }
   }
   .form-control {
     min-height: 40px;
-    height: 40px;
+    // height: 40px;
     &::placeholder {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
     }
   }
   .section-heading {
@@ -94,7 +91,7 @@ $web: 1280px;
     }
     &__link {
       white-space: nowrap;
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
       display: flex;
       align-items: center;
 
@@ -104,7 +101,7 @@ $web: 1280px;
       }
     }
     &__sub--title {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
     }
   }
   .collection-card {
@@ -118,7 +115,7 @@ $web: 1280px;
       margin-bottom: 5px;
     }
     &__count {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
       color: $black-70-color;
       margin-bottom: 0;
     }
@@ -141,7 +138,7 @@ $web: 1280px;
     &__price {
       margin-bottom: 0;
       .actual-price {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
       }
       .marked-price {
         font-size: 13px;
@@ -159,18 +156,23 @@ $web: 1280px;
       padding: 15px;
     }
     &__date {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
       margin-bottom: 5px;
     }
     &__title {
       font-size: 16px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     &__link {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
       i {
         font-size: 11px;
       }
+    }
+  }
+  .order-procedure {
+    .procedure-card {
+      width: 100%;
     }
   }
 
@@ -189,11 +191,13 @@ $web: 1280px;
         }
       }
       &__title {
-        font-size: 16px;
+        font-family: $yeseva-font;
+        font-size: $font-md-size;
         margin-bottom: 5px;
+        font-weight: 400;
       }
       &__description {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
       }
     }
   }
@@ -248,7 +252,7 @@ $web: 1280px;
       }
       &__link {
         padding: 5px 10px;
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
         margin-right: 5px;
         i {
           font-size: 13px;
@@ -267,14 +271,14 @@ $web: 1280px;
         width: 100%;
         .top-offer {
           &__text {
-            font-size: $font-sm-size;
+            font-size: $font-md-size;
           }
         }
       }
       .column-end {
         .quick-link {
           &__link {
-            font-size: $font-sm-size;
+            font-size: $font-md-size;
           }
         }
       }
@@ -291,12 +295,12 @@ $web: 1280px;
           }
         }
       }
-      
+
       .column-end {
         .icon-menu {
           &__link {
-            font-size: $font-md-size;
-            margin-left: 15px;
+            font-size: $font-lg-size;
+            margin-left: 20px;
             .cart-count {
               height: 18px;
               width: 18px;
@@ -329,7 +333,7 @@ $web: 1280px;
           margin-bottom: 10px;
         }
         &__description {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           margin-bottom: 40px;
         }
       }
@@ -343,7 +347,7 @@ $web: 1280px;
           margin-bottom: 5px;
         }
         &__position {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
         }
       }
       .slick-arrow {
@@ -352,7 +356,7 @@ $web: 1280px;
         border-radius: 50%;
         top: 100%;
         &.slick-prev {
-          left: 65%;
+          left: 72%;
         }
         &.slick-next {
           right: 0%;
@@ -384,7 +388,7 @@ $web: 1280px;
             margin-bottom: 5px;
           }
           &__position {
-            font-size: $font-sm-size;
+            font-size: $font-md-size;
             margin-bottom: 10px;
             color: $light-white-color;
           }
@@ -396,21 +400,21 @@ $web: 1280px;
         margin: 0;
 
         &__title {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           color: $white-color;
           margin-bottom: 10px;
         }
 
         &__link {
           margin-bottom: 10px;
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           i {
             margin-right: 5px;
             font-size: 12px;
           }
         }
         &__description {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           margin-bottom: 5px;
         }
       }
@@ -427,7 +431,39 @@ $web: 1280px;
     .bottom-footer {
       padding: 10px 0;
       .copyright-text {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
+      }
+    }
+  }
+
+  // section banner
+  .section-banner {
+    &__title {
+      font-size: $font-lg-size;
+    }
+    &__description {
+      font-weight: 400;
+    }
+    .contact-card {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: 2px solid $light-white-color;
+        left: 5px;
+        bottom: -5px;
+      }
+      .contact {
+        &__label {
+          font-size: $font-md-size;
+          color: $black-color;
+        }
+        &__text {
+          font-size: $font-md-size;
+          // color: $black-70-color;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -441,7 +477,7 @@ $web: 1280px;
       z-index: 1;
       .best-deal {
         &__subtitle {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           margin-bottom: 10px;
         }
         &__title {
@@ -449,7 +485,7 @@ $web: 1280px;
           margin-bottom: 10px;
         }
         &__description {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           margin-bottom: 20px;
         }
         &__image {
@@ -493,7 +529,7 @@ $web: 1280px;
         margin-bottom: 20px;
       }
       &__description {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
         color: $black-color;
         margin-bottom: 0;
       }
@@ -504,7 +540,7 @@ $web: 1280px;
           color: $red-color;
         }
         .marked__price {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           color: $black-70-color;
           text-decoration: line-through;
         }
@@ -515,7 +551,7 @@ $web: 1280px;
       margin-bottom: 20px;
       border-bottom: 1px solid rgba($color: #000000, $alpha: 0.075);
       &__title {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
         margin-bottom: 15px;
       }
       &__list {
@@ -534,7 +570,7 @@ $web: 1280px;
         }
         label {
           height: 40px;
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           padding: 0 20px;
         }
       }
@@ -547,10 +583,10 @@ $web: 1280px;
       margin-top: 20px;
       border-top: 1px solid rgba($color: #000000, $alpha: 0.075);
       &__label {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
       }
       &__text {
-        font-size: $font-sm-size;
+        font-size: $font-md-size;
       }
     }
   }
@@ -569,7 +605,7 @@ $web: 1280px;
       font-size: $font-lg-size;
     }
     &__tabs-content {
-      font-size: $font-sm-size;
+      font-size: $font-md-size;
     }
     .return-policy {
       &__title {
@@ -617,18 +653,18 @@ $web: 1280px;
       }
       .review {
         &__date {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           margin-bottom: 10px;
         }
         &__content {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
           color: $black-color;
           margin-bottom: 0;
         }
         &__stars {
           white-space: nowrap;
           i {
-            font-size: $font-sm-size;
+            font-size: $font-md-size;
           }
         }
       }
@@ -715,27 +751,81 @@ $web: 1280px;
             font-size: $font-md-size;
           }
           .marked__price {
-            font-size: $font-sm-size;
+            font-size: $font-md-size;
           }
         }
         &__description {
-          font-size: $font-sm-size;
+          font-size: $font-md-size;
         }
         &__review {
           margin-bottom: 10px;
           .review {
             &__stars {
               i {
-                font-size: $font-sm-size;
+                font-size: $font-md-size;
               }
             }
             &__count {
-              font-size: $font-sm-size;
+              font-size: $font-md-size;
             }
           }
         }
       }
     }
   }
-}
 
+  // about us
+  .about-company {
+    .company__image {
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .company-detail {
+      &__title {
+        font-size: $font-lg-size;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .owner-information {
+    padding: 20px 0;
+    .owner {
+      &__profile {
+        height: auto;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .company-goal {
+    &__icon {
+      margin-bottom: 10px;
+    }
+  }
+  // faqs page
+
+  .faq {
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+    &__item {
+      padding: 15px 0;
+    }
+
+    &__question {
+      i {
+        font-size: $font-md-size;
+      }
+    }
+    &__title {
+      font-size: $font-md-size;
+    }
+    &__answer {
+      margin-top: 10px;
+    }
+  }
+  .link-category {
+    &__name {
+      margin-bottom: 5px;
+    }
+  }
+}

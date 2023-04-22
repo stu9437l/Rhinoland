@@ -42,12 +42,12 @@ section {
       justify-content: center;
       border-radius: 50%;
       background-color: white;
-      border: 1px solid $black-70-color;
+      border: 1px solid $red-color;
       top: 110%;
       &::before {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        color: $black-color;
+      color: $red-color;
       }
       &.slick-prev {
         content: "\f054";
@@ -67,5 +67,11 @@ section {
       opacity: 0.3;
       cursor: not-allowed;
     }
+  }
+  .offer__banner {
+    display: block;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
   }
 }

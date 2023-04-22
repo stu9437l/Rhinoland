@@ -110,10 +110,14 @@ $(document).ready(function () {
   faqButton.each(function () {
     $(this).click(function () {
       $(".faq__item .faq__content").slideUp();
-      $(this).closest(".faq__item").find(".faq__content").slideToggle();
-      $(this)
-        .find(".faq__icon")
-        .togglehtml(" <i class='fa-solid fa-minus'></i>");
+      faqButton.find(".faq__icon").html(' <i class="fa-solid fa-plus"></i>');
+      if (
+        $(this).closest(".faq__item").find(".faq__content").css("display") ===
+        "none"
+      ) {
+        $(this).find(".faq__icon").html(' <i class="fa-solid fa-minus"></i>');
+        $(this).closest(".faq__item").find(".faq__content").slideDown();
+      }
     });
   });
 });

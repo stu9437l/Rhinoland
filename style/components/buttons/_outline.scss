@@ -1,0 +1,37 @@
+.button-outline {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  text-decoration: none;
+  border-radius: $border-radius;
+  transition: $transition;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: $font-md-size;
+  &--red {
+    border: 2px solid $red-color;
+    color: $red-color;
+  }
+  i {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  &:hover {
+    background-color: $red-color;
+    color: white;
+    border-color: $red-color;
+  }
+  &--square {
+    width: 50px;
+    padding: 0 !important;
+    flex-shrink: 0;
+    border-radius: $border-radius;
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
