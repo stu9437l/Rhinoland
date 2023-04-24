@@ -37,4 +37,7 @@ h4 {
   &-black {
     color: $black-color;
   }
+  &--bold {
+    font-weight: 700;
+  }
 }

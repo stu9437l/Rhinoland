@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinoland</title>
+    <!-- bootstrap links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick slider links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+
+  <body>
+    <!-- search modal  -->
+    <div class="modal search-modal" id="main__search__modal">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="search-modal__header">
+                <div class="section-heading mb-0">
+                  <h2 class="section-heading__title">
+                    Search your favorite items
+                  </h2>
+                </div>
+                <div class="modal-close">
+                  <button class="modal-close__button" data-bs-dismiss="modal">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="search-modal__body">
+                <form action="">
+                  <div class="search-modal__form">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="main-search"
+                      placeholder="Search any keyword"
+                    />
+                    <button class="button button--large button--red">
+                      <span class="d-none d-md-inline-block">Search</span>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
+                <div class="trending-keywords">
+                  <div class="section-heading">
+                    <h2 class="section-heading__title">Trending keywords</h2>
+                  </div>
+                  <ul class="trending-keywords__list">
+                    <li class="trending-keywords__item">
+                      <a href="" class="trending-keywords__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Dining Table</span>
+                      </a>
+                    </li>
+                    <li class="trending-keywords__item">
+                      <a href="" class="trending-keywords__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Dining Table</span>
+                      </a>
+                    </li>
+                    <li class="trending-keywords__item">
+                      <a href="" class="trending-keywords__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Dining Table</span>
+                      </a>
+                    </li>
+                    <li class="trending-keywords__item">
+                      <a href="" class="trending-keywords__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Dining Table</span>
+                      </a>
+                    </li>
+                    <li class="trending-keywords__item">
+                      <a href="" class="trending-keywords__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Dining Table</span>
+                      </a>
+                    </li>
+                    <li class="trending-keywords__item">
+                      <a href="" class="trending-keywords__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Dining Table</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="famous-products d-none d-md-block">
+                  <div class="section-heading">
+                    <h2 class="section-heading__title">Famous Products</h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="product-card mb-0">
+                        <a href="" class="product-card__image">
+                          <img
+                            class="img__fluid"
+                            src="./image/products/product.png"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="">
+                          <h3 class="product-card__title">
+                            Custom made chairs and stools
+                          </h3>
+                        </a>
+
+                        <p class="product-card__price">
+                          <span class="actual-price"> NRS. 16,000 </span>
+                          <span class="marked-price"> 19,000 </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card mb-0">
+                        <a href="" class="product-card__image">
+                          <img
+                            class="img__fluid"
+                            src="./image/products/product.png"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="">
+                          <h3 class="product-card__title">
+                            Custom made chairs and stools
+                          </h3>
+                        </a>
+
+                        <p class="product-card__price">
+                          <span class="actual-price"> NRS. 16,000 </span>
+                          <span class="marked-price"> 19,000 </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card mb-0">
+                        <a href="" class="product-card__image">
+                          <img
+                            class="img__fluid"
+                            src="./image/products/product.png"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="">
+                          <h3 class="product-card__title">
+                            Custom made chairs and stools
+                          </h3>
+                        </a>
+
+                        <p class="product-card__price">
+                          <span class="actual-price"> NRS. 16,000 </span>
+                          <span class="marked-price"> 19,000 </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card mb-0">
+                        <a href="" class="product-card__image">
+                          <img
+                            class="img__fluid"
+                            src="./image/products/product.png"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="">
+                          <h3 class="product-card__title">
+                            Custom made chairs and stools
+                          </h3>
+                        </a>
+
+                        <p class="product-card__price">
+                          <span class="actual-price"> NRS. 16,000 </span>
+                          <span class="marked-price"> 19,000 </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile offcanvas menu -->
+    <div
+      class="offcanvas offcanvas-start mobile-menu"
+      tabindex="-1"
+      id="mobile-nav__offcanvas"
+    >
+      <div class="offcanvas-header">
+        <a href="" class="brand-logo">
+          <img src="./image/original-logo.png" alt="" />
+        </a>
+
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Our Product</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">On Sale</a>
+          </li>
+          <li class="main-nav__item">
+            <a type="button" class="main-nav__link"
+              >Collections <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="mob-dropdown-menu">
+              <div class="mb-3">
+                <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+                <ul class="mob-dropdown-menu__list">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Rhinoland CH white Shoes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">J & M Black shoes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TBS boots</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">SP Grey shoes</a>
+                  </li>
+                </ul>
+                <a href="" class="mob-dropdown-menu__link">
+                  <span> Show More</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="mb-3">
+                <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+                <ul class="mob-dropdown-menu__list">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Rhinoland CH white Shoes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">J & M Black shoes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TBS boots</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">SP Grey shoes</a>
+                  </li>
+                </ul>
+                <a href="" class="mob-dropdown-menu__link">
+                  <span> Show More</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="mb-3">
+                <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+                <ul class="mob-dropdown-menu__list">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Rhinoland CH white Shoes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">J & M Black shoes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TBS boots</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">SP Grey shoes</a>
+                  </li>
+                </ul>
+                <a href="" class="mob-dropdown-menu__link">
+                  <span> Show More</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="mb-3">
+                <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
+                <ul class="mob-dropdown-menu__list">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Rhinoland CH white Shoes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">J & M Black shoes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TBS boots</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">SP Grey shoes</a>
+                  </li>
+                </ul>
+                <a href="" class="mob-dropdown-menu__link">
+                  <span> Show More</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">New Designs</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Career</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Create Account</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="column-start d-none d-md-block">
+              <ul class="social-media__list">
+                <li class="social-media__item">
+                  <a href="" class="social-media__link"
+                    ><i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a href="" class="social-media__link"
+                    ><i class="fa-brands fa-square-youtube"></i
+                  ></a>
+                </li>
+                <li class="social-media__item">
+                  <a href="" class="social-media__link"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </li>
+                <li class="social-media__item">
+                  <a href="" class="social-media__link"
+                    ><i class="fa-brands fa-square-instagram"></i
+                  ></a>
+                </li>
+                <li class="social-media__item">
+                  <a href="" class="social-media__link"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-center">
+              <div class="top-offer__banner">
+                <p class="top-offer__text">
+                  Up to 505 Off Sitewide + Free Shipping
+                </p>
+              </div>
+            </div>
+            <div class="column-end d-none d-md-block">
+              <ul class="quick-link__list">
+                <li class="quick-link__item">
+                  <a href="" class="quick-link__link">Home</a>
+                </li>
+                <li class="quick-link__item">
+                  <a href="" class="quick-link__link">Contact</a>
+                </li>
+                <li class="quick-link__item">
+                  <a href="" class="quick-link__link">Faqs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="container">
+          <nav class="d-flex align-items-center position-relative">
+            <div class="column-start">
+              <a href="" class="brand-logo">
+                <img
+                  src="./image//new-logo.png"
+                  alt=""
+                  class="brand-logo__image"
+                />
+              </a>
+            </div>
+            <div class="column-center d-none d-md-block">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Our Product</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">On Sale</a>
+                </li>
+                <li class="main-nav__item dropdown">
+                  <a href="" class="main-nav__link" data-bs-toggle="dropdown"
+                    >Collections <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div class="dropdown-menu">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                        <ul class="dropdown-menu__list">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Rhinoland CH white Shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >J & M Black shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">TBS boots</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">SP Grey shoes</a>
+                          </li>
+                        </ul>
+                        <a href="" class="dropdown-menu__link">
+                          <span> Show More</span>
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                        <ul class="dropdown-menu__list">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Rhinoland CH white Shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >J & M Black shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">TBS boots</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">SP Grey shoes</a>
+                          </li>
+                        </ul>
+                        <a href="" class="dropdown-menu__link">
+                          <span> Show More</span>
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                        <ul class="dropdown-menu__list">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Rhinoland CH white Shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >J & M Black shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">TBS boots</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">SP Grey shoes</a>
+                          </li>
+                        </ul>
+                        <a href="" class="dropdown-menu__link">
+                          <span> Show More</span>
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-3">
+                        <h3 class="dropdown-menu__title">Boots and Shoes</h3>
+                        <ul class="dropdown-menu__list">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Rhinoland CH white Shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >J & M Black shoes</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">TBS boots</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">SP Grey shoes</a>
+                          </li>
+                        </ul>
+                        <a href="" class="dropdown-menu__link">
+                          <span> Show More</span>
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">New Designs</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="" class="main-nav__link">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column-end ms-auto">
+              <ul class="icon-menu__list">
+                <li class="icon-menu__item d-inline-block d-md-none">
+                  <a
+                    type="button"
+                    class="icon-menu__link"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobile-nav__offcanvas"
+                  >
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+                </li>
+                <li class="icon-menu__item">
+                  <a
+                    type="button"
+                    class="icon-menu__link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#main__search__modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+                <li class="icon-menu__item d-none d-md-inline-block">
+                  <a href="" class="icon-menu__link">
+                    <i class="fa-regular fa-user"></i>
+                  </a>
+                </li>
+                <li class="icon-menu__item">
+                  <a href="" class="icon-menu__link">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="cart-count">
+                      <span>3</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="icon-menu__item">
+                  <a href="" class="icon-menu__link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="breadcrumb-section">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="" class="breadcrumb__link">Home</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="" class="breadcrumb__link">Category</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link is-active">Search "chair and table"</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="checkout-section">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-6">
+              <div class="column-start">
+                <div class="product-checkout-detail">
+                  <div
+                    class="d-flex aling-items-start justify-content-between mb-4"
+                  >
+                    <h3 class="product__name">Product Rhinoland WV leather</h3>
+                    <div class="product__price">
+                      <h3 class="actual__price me-2">NPR. 7999</h3>
+                      <h4 class="marked__price">NPR. 9000</h4>
+                    </div>
+                  </div>
+                  <div class="product__image">
+                    <img
+                      class="img__fluid"
+                      src="https://rhinolandfurniture.com/assets/admin/images/product/400_200_15697471197473_banner%20purse.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="product__id">Product ID : #565GJH87HHB</h3>
+                  <p class="product__description">
+                    Details Imported genuine branded shoes, no copy - no
+                    duplicate. Handmade with high quality genuine leather.
+                    Factory surplus Comfortable and trendy. Rhinoland aims at
+                    taking your style quotient a notch higher with the best
+                    footwear. Being a style conscious brand, our collection has
+                    got everything to spoil you for choice. Revitalize your shoe
+                    arsenal with the best picks that today’s men and women will
+                    always motivate us for doing better and bringing high
+                    qualitative products. Thank you for watching this product
+                  </p>
+                  <h3 class="text-md my-4">Select Different Sizes</h3>
+                  <ul class="product-size__list">
+                    <li>
+                      <input
+                        type="radio"
+                        name="product-size"
+                        id="small-size"
+                        checked
+                      />
+                      <label class="size__box" for="small-size">
+                        <div class="d-flex">
+                          <div class="check-icon">
+                            <i class="fa-solid fa-check"></i>
+                          </div>
+                          <div class="ms-4">
+                            <div
+                              class="d-flex aling-items-start justify-content-between mb-3 w-100"
+                            >
+                              <h3 class="size__name">Small size</h3>
+                              <h4 class="price__label">NPR. 3400,00</h4>
+                            </div>
+                            <p class="product__tags">
+                              Black , high Quality,2 year warrenlty
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="product-size"
+                        id="medium-size"
+                      />
+                      <label class="size__box" for="medium-size">
+                        <div class="d-flex">
+                          <div class="check-icon">
+                            <i class="fa-solid fa-check"></i>
+                          </div>
+                          <div class="ms-4">
+                            <div
+                              class="d-flex aling-items-start justify-content-between mb-3 w-100"
+                            >
+                              <h3 class="size__name">Medium size</h3>
+                              <h4 class="price__label">NPR. 3400,00</h4>
+                            </div>
+                            <p class="product__tags">
+                              Black , high Quality,2 year warrenlty
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" name="product-size" id="large-size" />
+                      <label class="size__box" for="large-size">
+                        <div class="d-flex">
+                          <div class="check-icon">
+                            <i class="fa-solid fa-check"></i>
+                          </div>
+                          <div class="ms-4">
+                            <div
+                              class="d-flex aling-items-start justify-content-between mb-3 w-100"
+                            >
+                              <h3 class="size__name">Large size</h3>
+                              <h4 class="price__label">NPR. 3400,00</h4>
+                            </div>
+                            <p class="product__tags">
+                              Black , high Quality,2 year warrenlty
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="section-heading d-block">
+                <h3 class="section-heading__title">Product Detail</h3>
+                <p class="section-headding__description">
+                  Complete your purchase by providing your payment details
+                </p>
+              </div>
+              <div class="billing-form">
+                <form action="">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="fullname">Full Name</label>
+                        <input
+                          type="text"
+                          id="fullname"
+                          class="form-control"
+                          placeholder="@My name is"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="phone">Contact/Mobile</label>
+                        <input
+                          type="text"
+                          id="phone"
+                          class="form-control"
+                          placeholder="9089898989"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="email">Email Address</label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          placeholder="@gmail.com"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input
+                          type="text"
+                          id="address"
+                          class="form-control"
+                          placeholder="kathmandu"
+                        />
+                      </div>
+                    </div>
+                    <p class="text--bold text-red my-3">Billin Information</p>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="amount"
+                          >Amount
+                          <span class="text-sm"
+                            >(Minimum NPR. 1000 only)</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="amount"
+                          class="form-control"
+                          placeholder="NPR. 00.00"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="file">Upload Screenshot</label>
+                        <input type="file" id="file" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="message">Additional Detail</label>
+                        <textarea
+                          name=""
+                          id="message"
+                          rows="4"
+                          class="form-control"
+                          placeholder="Write Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3 checkout-detail">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <p class="checkout-detil__label">Subtotal</p>
+                          <p class="checkout-detil__label">NPR. 34000</p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <p class="checkout-detil__label">Discount</p>
+                          <p class="checkout-detil__label">NPR. 0</p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <p class="checkout-detil__label text--bold">Total</p>
+                          <p class="checkout-detil__label text--bold">
+                            NPR. 34000
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                          <button class="button button--solid button--red">
+                            Order Confirm Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="text-md text-center text-black">
+                      <i class="fa-regular fa-credit-card"></i> Payments are
+                      secured and ecrypted
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="owner-profile">
+                <div class="owner-profile__image">
+                  <img
+                    class="img__fluid"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                    alt=""
+                  />
+                </div>
+                <h3 class="owner-profile__name">Bijaya Yadav</h3>
+                <p class="owner-profile__position">Manager of Rhinoland</p>
+                <ul class="footer-nav">
+                  <li class="footer-nav__item">
+                    <a type="button" class="footer-nav__link text--black">
+                      <i class="fa-solid fa-location-dot"></i>
+                      Bishalnagar-5, Kathmandu, Nepal
+                    </a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a type="button" class="footer-nav__link text--black">
+                      <i class="fa-solid fa-phone"></i>
+                      9800123456
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+              <h3 class="footer-nav__title">Quick Links</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> About us </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Contact us </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Privacy Policy </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Term & Condition </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Why choose us </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+              <h3 class="footer-nav__title">Services</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Returns </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link"> Financing </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Shipping </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Faqs </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Faqs </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3 class="footer-nav__title">NewsLetter</h3>
+              <p class="footer-nav__description">
+                Subscribe to receive updates, access to exclusive deals.
+              </p>
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a type="button" class="footer-nav__link">
+                    <i class="fa-solid fa-envelope"></i>
+                    Bishalnagar-5, Kathmandu, Nepal
+                  </a>
+                </li>
+              </ul>
+              <form action="">
+                <div class="newsletter-form">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter Email Address"
+                  />
+                  <button class="button button--square button--red">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p class="copyright-text">
+          Copyright © 2023 Rhinoland. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- slick slider script cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custom script file -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
