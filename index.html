@@ -222,7 +222,7 @@
 
     <!-- mobile offcanvas menu -->
     <div
-      class="offcanvas offcanvas-start mobile-menu"
+      class="offcanvas offcanvas-start mobile-menu show d-block"
       tabindex="-1"
       id="mobile-nav__offcanvas"
     >
@@ -250,10 +250,12 @@
             <a href="" class="main-nav__link">On Sale</a>
           </li>
           <li class="main-nav__item">
-            <a type="button" class="main-nav__link"
-              >Collections <i class="fa-solid fa-chevron-down"></i
+            <a
+              type="button"
+              class="main-nav__link d-flex align-items-center justify-content-between"
+              ><span>Collections</span> <i class="fa-solid fa-chevron-down"></i
             ></a>
-            <div class="mob-dropdown-menu">
+            <div class="mob-dropdown-menu my-3">
               <div class="mb-3">
                 <h3 class="mob-dropdown-menu__title">Boots and Shoes</h3>
                 <ul class="mob-dropdown-menu__list">

@@ -56,7 +56,7 @@ header {
         &__item {
         }
         &__link {
-          font-size:$font-sm-size;
+          font-size: $font-sm-size;
           color: $black-color;
           text-decoration: none;
           margin-left: 20px;
@@ -237,6 +237,7 @@ header {
 .offcanvas {
   &.mobile-menu {
     height: 100vh;
+    padding: 20px;
     overflow-y: auto;
     .brand-logo {
       img {
@@ -248,16 +249,26 @@ header {
         list-style: none;
         margin: 0;
         padding: 0;
+        > li {
+          &:nth-child(n) {
+            border-bottom: 1px solid $light-red-color;
+          }
+          &:first-child {
+            border-top: 1px solid $light-red-color;
+          }
+        }
       }
+
       &__link {
-        display: inline-block;
-        font-size: 14px;
+        display: block;
+        font-size: $font-md-size;
+        width: 100%;
         color: $black-color;
         text-decoration: none;
         margin: 0;
-        text-transform: uppercase;
         font-weight: 600;
         padding: 10px 0;
+
         &:hover {
           color: $red-color;
         }
@@ -287,7 +298,7 @@ header {
         }
       }
       &__title {
-        font-size: 14px;
+        font-size: $font-md-size;
       }
     }
 

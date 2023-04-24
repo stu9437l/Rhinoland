@@ -944,6 +944,7 @@ header .bottom-header .column-end .icon-menu__link:hover::after {
 
 .offcanvas.mobile-menu {
   height: 100vh;
+  padding: 20px;
   overflow-y: auto;
 }
 .offcanvas.mobile-menu .brand-logo img {
@@ -954,13 +955,19 @@ header .bottom-header .column-end .icon-menu__link:hover::after {
   margin: 0;
   padding: 0;
 }
+.offcanvas.mobile-menu .main-nav__list > li:nth-child(n) {
+  border-bottom: 1px solid rgba(160, 10, 11, 0.05);
+}
+.offcanvas.mobile-menu .main-nav__list > li:first-child {
+  border-top: 1px solid rgba(160, 10, 11, 0.05);
+}
 .offcanvas.mobile-menu .main-nav__link {
-  display: inline-block;
-  font-size: 14px;
+  display: block;
+  font-size: 18px;
+  width: 100%;
   color: black;
   text-decoration: none;
   margin: 0;
-  text-transform: uppercase;
   font-weight: 600;
   padding: 10px 0;
 }
@@ -992,7 +999,7 @@ header .bottom-header .column-end .icon-menu__link:hover::after {
   text-decoration: underline;
 }
 .offcanvas.mobile-menu .mob-dropdown-menu__title {
-  font-size: 14px;
+  font-size: 18px;
 }
 .offcanvas.mobile-menu .dropdown-item {
   display: inline-block;
