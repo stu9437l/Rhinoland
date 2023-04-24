@@ -622,8 +622,8 @@
           </ul>
         </div>
       </section>
-      <section class="checkout-section">
-        <!-- mobile stick button for checkout page -->
+      <section class="cart-section">
+        <!-- mobiel checkout button -->
         <div class="sticky__bottom checkout-button">
           <a class="button button--red button--solid" href="#checkout-form">
             <span>Checkout Now</span> <i class="fa-solid fa-chevron-right"></i>
@@ -631,240 +631,163 @@
           <div class="price">NPR. 34000</div>
         </div>
         <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <div class="column-start">
-                <div class="product-checkout-detail">
-                  <div
-                    class="d-md-flex aling-items-start justify-content-between mb-3"
-                  >
-                    <h3 class="product__name">Product Rhinoland WV leather</h3>
-                    <div class="product__price">
-                      <h3 class="actual__price me-2">NPR. 7999</h3>
-                      <h4 class="marked__price">NPR. 9000</h4>
-                    </div>
-                  </div>
-                  <div class="product__image">
+          <div class="row">
+            <div class="section-heading d-block text-center">
+              <h3 class="section-heading__title">
+                Cart collection <span class="text-red">(2)</span>
+              </h3>
+              <p class="section-heading__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                repudiandae rerum soluta!
+              </p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table cart-table">
+              <thead>
+                <tr>
+                  <th colspan="3">#</th>
+                  <th colspan="3">Description</th>
+                  <th colspan="1">Size</th>
+                  <th colspan="3">Quantity</th>
+                  <th colspan="1">Remove</th>
+                  <th colspan="1">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3">
                     <img
-                      class="img__fluid"
-                      src="https://rhinolandfurniture.com/assets/admin/images/product/400_200_15697471197473_banner%20purse.jpg"
+                      src="./image/products/product.png"
                       alt=""
+                      class="product__image"
                     />
-                  </div>
-                  <h3 class="product__id">Product ID : #565GJH87HHB</h3>
-                  <p class="product__description">
-                    Details Imported genuine branded shoes, no copy - no
-                    duplicate. Handmade with high quality genuine leather.
-                    Factory surplus Comfortable and trendy. Rhinoland aims at
-                    taking your style quotient a notch higher with the best
-                    footwear. Being a style conscious brand, our collection has
-                    got everything to spoil you for choice. Revitalize your shoe
-                    arsenal with the best picks that today’s men and women will
-                    always motivate us for doing better and bringing high
-                    qualitative products. Thank you for watching this product
-                  </p>
-                  <h3 class="text-md my-4">SELECT DIFFERENT SIZES</h3>
-                  <ul class="product-size__list">
-                    <li>
-                      <input
-                        type="radio"
-                        name="product-size"
-                        id="small-size"
-                        checked
-                      />
-                      <label class="size__box" for="small-size">
-                        <div class="d-flex">
-                          <div class="check-icon">
-                            <i class="fa-solid fa-check"></i>
-                          </div>
-                          <div class="ms-2">
-                            <div
-                              class="d-flex aling-items-start justify-content-between mb-3 w-100"
-                            >
-                              <h3 class="size__name">Small size</h3>
-                              <h4 class="price__label">NPR. 3400,00</h4>
-                            </div>
-                            <p class="product__tags">
-                              Black , high Quality,2 year warrenlty
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-                    <li>
-                      <input
-                        type="radio"
-                        name="product-size"
-                        id="medium-size"
-                      />
-                      <label class="size__box" for="medium-size">
-                        <div class="d-flex">
-                          <div class="check-icon">
-                            <i class="fa-solid fa-check"></i>
-                          </div>
-                          <div class="ms-2">
-                            <div
-                              class="d-flex aling-items-start justify-content-between mb-3 w-100"
-                            >
-                              <h3 class="size__name">Medium size</h3>
-                              <h4 class="price__label">NPR. 3400,00</h4>
-                            </div>
-                            <p class="product__tags">
-                              Black , high Quality,2 year warrenlty
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="radio" name="product-size" id="large-size" />
-                      <label class="size__box" for="large-size">
-                        <div class="d-flex">
-                          <div class="check-icon">
-                            <i class="fa-solid fa-check"></i>
-                          </div>
-                          <div class="ms-2">
-                            <div
-                              class="d-flex aling-items-start justify-content-between mb-3 w-100"
-                            >
-                              <h3 class="size__name">Large size</h3>
-                              <h4 class="price__label">NPR. 3400,00</h4>
-                            </div>
-                            <p class="product__tags">
-                              Black , high Quality,2 year warrenlty
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </li>
-                  </ul>
+                  </td>
+                  <td colspan="3">
+                    <h3 class="product__name">Rhinoland WV leather</h3>
+                    <p class="text-red product__id">
+                      Product ID: #JNJKDF8886767
+                    </p>
+                  </td>
+                  <td colspan="1">
+                    <div class="cart-square__box">
+                      <p class="mb-0">S</p>
+                    </div>
+                  </td>
+                  <td colspan="3">
+                    <div class="d-flex align-item-center">
+                      <button class="cart-square__box button--black">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                      <input type="text" class="cart-square__box" value="1" />
+                      <button class="cart-square__box button__solid--black">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td colspan="1">
+                    <button class="cart-square__box button--red">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </td>
+                  <td colspan="1">
+                    <h3 class="product__price">NPR. 23000</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <img
+                      src="./image/products/product.png"
+                      alt=""
+                      class="product__image"
+                    />
+                  </td>
+                  <td colspan="3">
+                    <h3 class="product__name">Rhinoland WV leather</h3>
+                    <p class="text-red product__id">
+                      Product ID: #JNJKDF8886767
+                    </p>
+                  </td>
+                  <td colspan="1">
+                    <div class="cart-square__box">
+                      <p class="mb-0">S</p>
+                    </div>
+                  </td>
+                  <td colspan="3">
+                    <div class="d-flex align-item-center">
+                      <button class="cart-square__box button--black">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                      <input type="text" class="cart-square__box" value="1" />
+                      <button class="cart-square__box button__solid--black">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td colspan="1">
+                    <button class="cart-square__box button--red">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </td>
+                  <td colspan="1">
+                    <h3 class="product__price">NPR. 23000</h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="border-box">
+                <p class="description">Discount</p>
+                <h3 class="price">NPR. 45000</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="border-box">
+                <p class="description">Delivery</p>
+                <h3 class="price">NPR. 45000</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="border-box">
+                <p class="description">Subtotal</p>
+                <h3 class="price">NPR. 45000</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="border-box">
+                <p class="description">Total</p>
+                <h3 class="price text-red">NPR. 45000</h3>
+              </div>
+            </div>
+          </div>
+          <div class="promotion__offer">
+            <p class="text-md">If you have an promotion code?</p>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row g-0">
+                <div class="col-7">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="promotion-code"
+                    placeholder="Please enter the promotion code"
+                  />
+                </div>
+                <div class="col-5">
+                  <button class="button button--solid button--red">
+                    Apply Code
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="col-md-5" id="checkout-form">
-              <div class="section-heading d-block">
-                <h3 class="section-heading__title">Product Detail</h3>
-                <p class="section-headding__description">
-                  Complete your purchase by providing your payment details
-                </p>
-              </div>
-              <div class="billing-form">
-                <form action="">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="fullname">Full Name</label>
-                        <input
-                          type="text"
-                          id="fullname"
-                          class="form-control"
-                          placeholder="@My name is"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <label for="phone">Contact/Mobile</label>
-                        <input
-                          type="text"
-                          id="phone"
-                          class="form-control"
-                          placeholder="9089898989"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <label for="email">Email Address</label>
-                        <input
-                          type="email"
-                          id="email"
-                          class="form-control"
-                          placeholder="@gmail.com"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="address">Address</label>
-                        <input
-                          type="text"
-                          id="address"
-                          class="form-control"
-                          placeholder="kathmandu"
-                        />
-                      </div>
-                    </div>
-                    <p class="text--bold text-red my-3">Billin Information</p>
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <label for="amount"
-                          >Amount
-                          <span class="text-sm"
-                            >(Minimum NPR. 1000 only)</span
-                          ></label
-                        >
-                        <input
-                          type="text"
-                          id="amount"
-                          class="form-control"
-                          placeholder="NPR. 00.00"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mb-3">
-                        <label for="file">Upload Screenshot</label>
-                        <input type="file" id="file" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label for="message">Additional Detail</label>
-                        <textarea
-                          name=""
-                          id="message"
-                          rows="4"
-                          class="form-control"
-                          placeholder="Write Message"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="mb-3 checkout-detail">
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <p class="checkout-detil__label">Subtotal</p>
-                          <p class="checkout-detil__label">NPR. 34000</p>
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <p class="checkout-detil__label">Discount</p>
-                          <p class="checkout-detil__label">NPR. 0</p>
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <p class="checkout-detil__label text--bold">Total</p>
-                          <p class="checkout-detil__label text--bold">
-                            NPR. 34000
-                          </p>
-                        </div>
-                        <div class="d-flex justify-content-center mt-4">
-                          <button class="button button--solid button--red">
-                            Order Confirm Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="text-md text-center text-black">
-                      <i class="fa-regular fa-credit-card"></i> Payments are
-                      secured and ecrypted
-                    </p>
-                  </div>
-                </form>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-end">
+                <button class="button button--red button--solid">
+                  Checkout Now
+                </button>
               </div>
             </div>
           </div>

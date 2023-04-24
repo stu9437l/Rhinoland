@@ -1,0 +1,99 @@
+.cart-section {
+  .cart-table {
+    td {
+      vertical-align: middle;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .product {
+      &__image {
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+      }
+      &__name {
+        font-size: $font-lg-size;
+        color: $black-color;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &__price {
+        font-size: $font-lg-size;
+        margin-bottom: 0;
+        color: $black-color;
+      }
+      &__id {
+        font-size: $font-md-size;
+        margin-bottom: 0;
+      }
+    }
+    input {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      box-shadow: 0;
+      padding: 10px;
+    }
+    .cart-square__box {
+      width: 50px;
+      height: 50px;
+      border-radius: $border-radius;
+      border: 1px solid rgba($color: #000000, $alpha: 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $font-md-size;
+      color: $black-color;
+
+      &.button--black {
+        background-color: $black-color;
+        color: $white-color;
+        border: 1px solid $black-color;
+        &:hover {
+          background-color: $white-color;
+          color: $black-color;
+        }
+      }
+      &.button__solid--black {
+        background-color: $white-color;
+        color: $black-color;
+        border: 1px solid $black-color;
+        &:hover {
+          background-color: $black-color;
+          color: $white-color;
+        }
+      }
+      &.button--red {
+        background-color: $red-color;
+        color: $white-color;
+        border: 1px solid $red-color;
+        &:hover {
+          background-color: $white-color;
+          color: $red-color;
+        }
+      }
+    }
+  }
+  .border-box {
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .description {
+      margin-bottom: 0;
+      font-size: $font-md-size;
+    }
+    .price {
+      margin-bottom: 0;
+      font-size: $font-lg-size;
+    }
+  }
+}
