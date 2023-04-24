@@ -72,6 +72,14 @@ a {
   text-decoration: none;
 }
 
+@keyframes zoomin {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 .button {
   height: 50px;
   display: flex;
@@ -743,6 +751,17 @@ label {
   background-color: #f6f6f4;
 }
 
+.offer-banner {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+.offer-banner .banner-image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
 header .top-header {
   padding: 6px 0;
   background-color: #f6f6f4;
@@ -882,6 +901,11 @@ header .bottom-header .column-center .main-nav__link {
   margin: 0 10px;
   font-weight: 600;
   padding: 30px 0;
+}
+header .bottom-header .column-center .main-nav__link.offer__link {
+  text-transform: uppercase;
+  color: #a00a0b;
+  animation: zoomin linear infinite 1s;
 }
 header .bottom-header .column-center .main-nav__link i {
   font-size: 13px;

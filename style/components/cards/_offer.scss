@@ -1,0 +1,10 @@
+.offer-banner {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  .banner-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
