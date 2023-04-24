@@ -1,7 +1,7 @@
 section {
   &.testimonial-section {
     padding: 48px 0 96px 0;
-    background-color: $light-white-color;
+    background-color: rgba($color: $red-color, $alpha: 0.05);
     .testimonial {
       &__title {
         font-size: 32px;
@@ -70,7 +70,7 @@ section {
   }
   .offer__banner {
     display: block;
-    height: 500px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
   }

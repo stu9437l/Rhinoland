@@ -11,7 +11,7 @@ section {
 section {
   &.best-deal-section {
     padding: 90px 0;
-    background-color: $light-white-color;
+    background-color:rgba($color: $red-color, $alpha: 0.05);
     position: relative;
     .best-deal {
       &__subtitle {

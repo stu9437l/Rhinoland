@@ -2,13 +2,20 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   &__image {
     height: 340px;
     width: 100%;
     display: block;
     border-radius: $border-radius;
     margin-bottom: 20px;
+    border: 1px solid rgba($color: $red-color, $alpha: 0.2);
+    padding: 5px;
+    transition: $transition;
+    &:hover{
+      padding: 0;
+      border-color: transparent;
+    }
   }
   &__title {
     font-size: 20px;
