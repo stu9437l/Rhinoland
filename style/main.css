@@ -271,7 +271,7 @@ label {
 }
 .collection-card__count {
   font-size: 18px;
-  color: #777;
+  color: #a00a0b;
   margin-bottom: 0;
   font-weight: 600;
 }
@@ -319,8 +319,16 @@ label {
   font-size: 15px;
   text-decoration: line-through;
 }
-.product-card a {
-  text-decoration: none;
+.product-card__offer-badge {
+  position: absolute;
+  padding: 10px 15px;
+  line-height: 1;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #a00a0b;
+  top: 5px;
+  right: 5px;
+  text-transform: uppercase;
 }
 
 .blog-card {
